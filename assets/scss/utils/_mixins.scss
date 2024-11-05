@@ -1,0 +1,43 @@
+//placeholder input
+
+@mixin ts-placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-ms-input-placeholder {
+    @content;
+  }
+}
+
+// transition specific
+@mixin ts-transition($property: all, $time: 0.3s, $func: ease-out, $delay: 0s) {
+  -webkit-transition: $property $time $delay $func;
+  -moz-transition: $property $time $delay $func;
+  -ms-transition: $property $time $delay $func;
+  -o-transition: $property $time $delay $func;
+  transition: $property $time $delay $func;
+}
+
+// transition multiple
+@mixin ts-transition-mul($property) {
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
+
+//transition
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out 0s;
+  -moz-transition: all $time ease-out 0s;
+  -ms-transition: all $time ease-out 0s;
+  -o-transition: all $time ease-out 0s;
+  transition: all $time ease-out 0s;
+}

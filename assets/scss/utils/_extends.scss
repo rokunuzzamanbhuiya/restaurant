@@ -1,0 +1,9 @@
+@use "./mixins" as *;
+
+// %ts-transition-common {
+//   transition: 0.3s;
+// }
+
+%ts-transition-common {
+  @include ts-transition();
+}

@@ -1,0 +1,30 @@
+// Responsive Variables
+$xxxxxl: "only screen and (min-width: 1700px) and (max-width: 1900px)";
+
+$xxxxl: "only screen and (min-width: 1600px) and (max-width: 1699.98px)";
+$xxxxl-m: "(max-width: 1699.98px)";
+
+$xxxl: "only screen and (min-width: 1500px) and (max-width: 1599.98px)";
+$xxxl-m: "(max-width: 1599.98px)";
+
+$xxl: "only screen and (min-width: 1400px) and (max-width: 1499.98px)";
+$xxl-m: "(max-width: 1499.98px)";
+
+$xl: "only screen and (min-width: 1200px) and (max-width: 1399.98px)";
+$xl-m: "(max-width: 1399.98px)";
+
+$lg: "only screen and (min-width: 992px) and (max-width: 1199.98px)";
+$lg-m: "(max-width: 1199.98px)";
+
+$md: "only screen and (min-width: 768px) and (max-width: 991.98px)";
+$md-m: "(max-width: 991.98px)";
+
+$sm: "only screen and (min-width: 576px) and (max-width: 767.98px)";
+$sm-m: "(max-width: 767.98px)";
+
+$xs: "only screen and (min-width: 200px) and (max-width: 575.98px)";
+$xs-m: "(max-width: 575.98px)";
+
+// responsive variable for wordpress admin bar
+$wp-sm: "@media (max-width: 782px)";
+$wp-xs: "@media (max-width: 600px)";

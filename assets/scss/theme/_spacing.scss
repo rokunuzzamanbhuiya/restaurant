@@ -1,0 +1,58 @@
+// @use "../utils" as *;
+
+/*--
+    - Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 200 {
+  .mt-#{1 * $i} {
+    margin-top: 1px * $i;
+  }
+}
+/*-- Margin Bottom --*/
+@for $i from 1 through 200 {
+  .mb-#{1 * $i} {
+    margin-bottom: 1px * $i;
+  }
+}
+/*-- Margin Left --*/
+@for $i from 1 through 200 {
+  .ml-#{1 * $i} {
+    margin-left: 1px * $i;
+  }
+}
+
+/*-- Margin Right --*/
+@for $i from 1 through 200 {
+  .mr-#{1 * $i} {
+    margin-right: 1px * $i;
+  }
+}
+
+/*-- Padding Top --*/
+@for $i from 1 through 200 {
+  .pt-#{1 * $i} {
+    padding-top: 1px * $i;
+  }
+}
+
+/*-- Padding Bottom --*/
+@for $i from 1 through 200 {
+  .pb-#{1 * $i} {
+    padding-bottom: 1px * $i;
+  }
+}
+
+/*-- Padding Left --*/
+@for $i from 1 through 200 {
+  .pl-#{1 * $i} {
+    padding-left: 1px * $i;
+  }
+}
+
+/*-- Padding Right --*/
+@for $i from 1 through 200 {
+  .pr-#{1 * $i} {
+    padding-right: 1px * $i;
+  }
+}
