@@ -30,6 +30,8 @@
   }
 
   &:hover {
+    background: var(--ts-orange-color);
+    color: #0a1425;
     & .ts-btn-animate-y-1 {
       opacity: 1;
       transform: translateY(-100%);
@@ -38,23 +40,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-
-    color: var(--ts-white);
-    &::before {
-      left: -110%;
-    }
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #71a2ff;
-    transform: skewX(-20deg);
-    left: 94%;
-    transition: 0.3s;
   }
 }
 

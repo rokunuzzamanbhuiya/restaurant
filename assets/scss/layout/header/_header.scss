@@ -1,1 +1,34 @@
 @use "../../utils" as *;
+
+.ts-header-area {
+  position: relative;
+  padding: 10px 0;
+  background: #000000;
+}
+
+.tp-transparent-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.ts-header-logo {
+  margin-right: 60px;
+}
+
+.ts-header-menu {
+  & ul {
+    display: flex;
+    align-items: center;
+    & li {
+      list-style: none;
+      & a {
+        color: var(--ts-white);
+        font-family: var(--ts-font-menu);
+        margin-right: 40px;
+      }
+    }
+  }
+}
