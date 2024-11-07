@@ -3,14 +3,15 @@
 .ts-header-area {
   position: relative;
   padding: 10px 0;
-  background: #000000;
+  background: transparent;
 }
 
-.tp-transparent-header {
+.ts-transparent-header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   z-index: 99;
 }
 

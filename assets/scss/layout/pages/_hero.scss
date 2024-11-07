@@ -1,1 +1,50 @@
 @use "../../utils" as *;
+
+.ts-hero-area {
+  position: relative;
+}
+
+.ts-hero-content {
+  position: relative;
+  z-index: 11;
+}
+
+.ts-hero-title {
+  color: var(--ts-white);
+  background: rgb(181, 43, 29);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 43, 29, 0) 0%,
+    rgba(181, 43, 29, 0.6) 100%
+  );
+}
+
+.ts-hero-paragraph {
+  font-size: 24px;
+  color: var(--ts-white);
+}
+
+.ts-hero-inner {
+  position: relative;
+}
+
+.ts-hero-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 45.5%;
+
+  & img {
+    width: 700px;
+    height: 650px;
+  }
+}
+
+.ts-hero-shape {
+  position: absolute;
+  z-index: 5;
+  width: 49px;
+  height: 49px;
+  top: 2%;
+  right: -2.5%;
+}

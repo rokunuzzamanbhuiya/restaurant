@@ -92,6 +92,7 @@
 	typography css start 
 ---------------------------------*/
 body {
+  position: relative;
   font-family: var(--ts-font-body);
   font-size: 16px;
   font-weight: normal;
@@ -112,7 +113,7 @@ h5,
 h6 {
   font-family: var(--ts-font-heading);
   color: var(--ts-heading-color);
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: 700;
   line-height: 1.2;
   @include transition(0.3s);
