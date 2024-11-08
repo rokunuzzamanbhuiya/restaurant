@@ -1,1 +1,27 @@
 @use "../../utils" as *;
+
+.ts-food-area {
+  position: relative;
+  background: #fbf7f2;
+}
+
+.ts-food-bg-img {
+  position: absolute;
+  left: -10%;
+  bottom: 10%;
+}
+
+.tsfood {
+  padding: 38px 20px;
+  background: var(--ts-white);
+  &__thumb {
+  }
+  &__shape {
+    width: 57px;
+    height: 4px;
+    background: var(--ts-theme-color-2);
+    margin: auto;
+  }
+  &__content {
+  }
+}

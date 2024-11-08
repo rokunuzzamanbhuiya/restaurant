@@ -8,6 +8,12 @@
   File Description: Main JS file of the template
 */
 
+  // var windowOn = $(window);
+
+  // windowOn.on("load", function () {
+  //   wowAnimation();
+  // });
+
   /*=============================================
 	=    		Preloader			      =
 =============================================*/
@@ -70,6 +76,64 @@
     }
   }
   itCursor();
+
+  /*=============================================
+	=    		3. Mobile Menu			      =
+=============================================*/
+
+  // offcanvas toogle
+  $(".ts-offcanvas-toogle").on("click", function () {
+    $(".ts-offcanvas").addClass("ts-offcanvas-open");
+    $(".ts-offcanvas-overlay").addClass("ts-offcanvas-overlay-open");
+  });
+  $(".ts-offcanvas-close-toggle,.ts-offcanvas-overlay,.ts-click-close").on(
+    "click",
+    function () {
+      $(".ts-offcanvas").removeClass("ts-offcanvas-open");
+      $(".ts-offcanvas-overlay").removeClass("ts-offcanvas-overlay-open");
+    }
+  );
+
+  // mobile menu
+  var tsMenuWrap = $(".ts-mobile-menu-active > ul").clone();
+  var tsSideMenu = $(".ts-offcanvas-menu nav");
+  tsSideMenu.append(tsMenuWrap);
+  if ($(tsSideMenu).find(".sub-menu, .ts-mega-menu").length != 0) {
+    $(tsSideMenu)
+      .find(".sub-menu, .ts-mega-menu")
+      .parent()
+      .append(
+        '<button class="ts-menu-close"><i class="fas fa-chevron-right"></i></button>'
+      );
+  }
+
+  var sideMenuList = $(
+    ".ts-offcanvas-menu nav > ul > li button.ts-menu-close, .ts-offcanvas-menu nav > ul li.has-dropdown > a"
+  );
+  $(sideMenuList).on("click", function (e) {
+    e.preventDefault();
+    if (!$(this).parent().hasClass("active")) {
+      $(this).parent().addClass("active");
+      $(this).siblings(".sub-menu, .ts-mega-menu").slideDown();
+    } else {
+      $(this).siblings(".sub-menu, .ts-mega-menu").slideUp();
+      $(this).parent().removeClass("active");
+    }
+  });
+
+  /*=============================================
+  	=    Menu sticky & Scroll to top      =
+  =============================================*/
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+    if (scroll < 245) {
+      $("#ts-sticky-header").removeClass("ts-sticky-menu");
+      // $(".scroll-to-target").removeClass("open");
+    } else {
+      $("#ts-sticky-header").addClass("ts-sticky-menu");
+      // $(".scroll-to-target").addClass("open");
+    }
+  });
 
   /*=============================================
   	=    Scroll to top      =

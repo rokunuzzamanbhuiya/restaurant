@@ -1,0 +1,68 @@
+@use "../utils" as *;
+
+.ts-offcanvas-menu {
+  & ul {
+    list-style: none;
+    & li {
+      position: relative;
+
+      & > a {
+        margin: 0;
+        padding: 0;
+        padding: 10px 0;
+        display: block;
+        font-size: 17px;
+        font-weight: 400;
+        border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+        &:hover {
+          color: var(--ts-theme-color);
+        }
+        &.active {
+          color: var(--ts-theme-color);
+        }
+      }
+
+      // & > a:nth-child(1) {
+      //   border-top: 1px solid rgba(1, 15, 28, 0.1);
+      // }
+
+      // &:not(:last-child) {
+      //   & > a {
+      //     border-bottom: 1px solid rgba(1, 15, 28, 0.1);
+      //   }
+      // }
+
+      &.active {
+        & > a {
+          color: var(--ts-theme-color);
+        }
+        & > .ts-menu-close {
+          border-color: var(--ts-theme-color);
+          color: #ffffff;
+          background-color: var(--ts-theme-color);
+          & i {
+            @include transform(rotate(90deg));
+          }
+        }
+      }
+      & .sub-menu {
+        display: none;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+.ts-menu-close {
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+  border: 1px solid rgba(1, 15, 28, 0.12);
+  height: 31px;
+  width: 31px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 31px;
+  & i {
+    @include transition(0.3s);
+  }
+}

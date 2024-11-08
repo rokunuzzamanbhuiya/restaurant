@@ -58,11 +58,11 @@
                             <div class="ts-header-left d-flex align-items-center">
 
                                 <div class="ts-header-logo">
-                                    <a href="#"><img src="assets/img/Logo.png" alt="Restaurant Logo"></a>
+                                    <a href="#"><img src="assets/img/logo.png" alt="Restaurant Logo"></a>
                                 </div>
 
                                 <div class="ts-header-menu d-none d-xl-flex">
-                                    <nav class="">
+                                    <nav class="ts-mobile-menu-active">
                                         <ul>
                                             <li><a href="#">Home</a></li>
                                             <li><a href="#">About</a></li>
@@ -102,6 +102,71 @@
         </div>
     </header>
     <!-- ==========Header Area Ends Here========== -->
+
+    <!-- ==========OffcanvasArea Starts Here========== -->
+    <div class="ts-offcanvas">
+        <div class="ts-offcanvas-wrapper">
+            <div class="ts-offcanvas-header d-flex justify-content-between align-items-center mb_40">
+                <div class="ts-offcanvas-logo">
+                    <a href="index.html"><img src="assets/img/logo-m.png" alt="Soten Logo"></a>
+                </div>
+                <div class="ts-offcanvas-close">
+                    <button class="ts-offcanvas-close-toggle"><i class="far fa-times"></i></button>
+                </div>
+            </div>
+
+            <div class="ts-offcanvas-menu mb_50">
+                <nav>
+                    <!-- Here Menu Will Come Automatically Via Javascript / Same Menu as in Header -->
+                </nav>
+            </div>
+
+
+            <!-- <div class="ts-offcanvas-content mb-50 d-none d-xl-block">
+                <h2 class="ts-offcanvas-title">Hello There!</h2>
+                <p>Web designing in a powerful way of just not an only professions. We have tendency to believe the idea
+                    that smart looking
+                    .</p>
+            </div> -->
+
+
+            <h3 class="ts-offcanvas-sm-title">Gallery</h3>
+
+            <div class="ts-offcanvas-gallery mb_50">
+                <a class="popup-image" href="assets/img/header/showcase-thumb-01.jpg"><img
+                        src="assets/img/header/showcase-thumb-01.jpg" alt="Soten"></a>
+                <a class="popup-image" href="assets/img/header/showcase-thumb-02.jpg"><img
+                        src="assets/img/header/showcase-thumb-02.jpg" alt="Soten"></a>
+                <a class="popup-image" href="assets/img/header/showcase-thumb-03.jpg"><img
+                        src="assets/img/header/showcase-thumb-03.jpg" alt="Soten"></a>
+                <a class="popup-image" href="assets/img/header/showcase-thumb-04.jpg"><img
+                        src="assets/img/header/showcase-thumb-04.jpg" alt="Soten"></a>
+            </div>
+            <div class="ts-offcanvas-info mb_40">
+                <h3 class="ts-offcanvas-sm-title">Information</h3>
+                <span><a href="tel:19009009000">+1 900 - 900 - 9000</a></span>
+                <span><a href="mailto:contact@example.com">contact@example.com</a></span>
+                <span>North Tower, Toronto, Canada</span>
+            </div>
+            <div class="ts-offcanvas-social mb_40">
+                <h3 class="ts-offcanvas-sm-title">Follow Us</h3>
+                <a class="ts-click-close" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="ts-click-close" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="ts-click-close" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a class="ts-click-close" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="ts-offcanvas-btn mb_40">
+                <a class="ts-btn" href="#">
+                    <span class="ts-btn-wrap">
+                        <span class="ts-btn-animate-y-1">BOOK A TABLE</span>
+                        <span class="ts-btn-animate-y-2">BOOK A TABLE</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="ts-offcanvas-overlay"></div>
+    <!-- ==========OffcanvasArea Ends Here========== -->
 
     <!-- ==========Main Area Starts Here========== -->
     <main>
@@ -311,7 +376,92 @@
         <!-- ==========About Section Ends Here========== -->
 
         <!-- ==========Food Section Starts Here========== -->
-        <section class="ts-food-area">
+        <section class="ts-food-area pt_120 pb_120">
+
+            <img class="ts-food-bg-img" src="assets/img/food/food-bg-img.png" alt="Restaurant">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-6">
+
+                        <div class="ts-section-title-wrapper">
+                            <h6 class="ts-section-subtitle">Crispy, Every Bite
+                                Taste
+                            </h6>
+                            <h2 class="ts-section-title">POPULAR FOOD ITEMS</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-6">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xl-3">
+                        <div class="tsfood text-center">
+                            <div class="tsfood__thumb mb_20">
+                                <img src="assets/img/food/food-img-1.png" alt="Restaurant">
+                            </div>
+                            <div class="tsfood__shape">
+                            </div>
+                            <div class="tsfood__content mt_20">
+                                <h4>vegetables burger</h4>
+                                <span>Barbecue Italian cuisine pizza</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3">
+                        <div class="tsfood text-center">
+                            <div class="tsfood__thumb mb_20">
+                                <img src="assets/img/food/food-img-2.png" alt="Restaurant">
+                            </div>
+                            <div class="tsfood__shape">
+                            </div>
+                            <div class="tsfood__content mt_20">
+                                <h4>Spacial Pizza</h4>
+                                <span>Barbecue Italian cuisine pizza</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3">
+                        <div class="tsfood text-center">
+                            <div class="tsfood__thumb mb_20">
+                                <img src="assets/img/food/food-img-3.png" alt="Restaurant">
+                            </div>
+                            <div class="tsfood__shape">
+                            </div>
+                            <div class="tsfood__content mt_20">
+                                <h4>Spacial French fries</h4>
+                                <span>Barbecue Italian cuisine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3">
+                        <div class="tsfood text-center">
+                            <div class="tsfood__thumb mb_20">
+                                <img src="assets/img/food/food-img-4.png" alt="Restaurant">
+                            </div>
+                            <div class="tsfood__shape">
+                            </div>
+                            <div class="tsfood__content mt_20">
+                                <h4>Cuisine Chicken</h4>
+                                <span>Japanese Cuisine Chicken</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
         <!-- ==========Food Section Endsts Here========== -->

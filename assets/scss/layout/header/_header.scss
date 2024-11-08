@@ -39,3 +39,42 @@
     }
   }
 }
+
+.ts-offcanvas-toogle {
+  & i {
+    font-size: 25px;
+    color: var(--ts-white);
+    cursor: pointer;
+  }
+}
+
+// Sticky Menu
+.ts-sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 100;
+  background: var(--ts-common-black);
+  -webkit-animation: 0.7s ease-in-out 0s normal none 1 running tsfadeInDown;
+  animation: 0.7s ease-in-out 0s normal none 1 running tsfadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+  border-radius: 0;
+}
+
+.tsfadeInDown {
+  animation: tpfadeInDown 1s ease-out forwards;
+}
+
+@keyframes tsfadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,101 @@
+@use "../utils" as *;
+
+.ts-offcanvas {
+  position: fixed;
+  z-index: 999;
+  background: #ffffff;
+  width: 400px;
+  top: 0;
+  right: -100%;
+  padding: 50px 40px;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scrollbar-width: none;
+  @media only screen and (max-width: 400px) {
+    width: 100%;
+    padding: 35px 30px;
+  }
+  &-open {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+  }
+  &-close-toggle {
+    margin-top: 5px;
+    font-size: 28px;
+    color: var(--ts-menu-color);
+    transition: 0.3s;
+    &:hover {
+      transform: rotate(180deg);
+      color: var(--ts-theme-color);
+    }
+  }
+  &-header {
+    @media #{$lg,$md,$xs} {
+      margin-bottom: 40px;
+    }
+  }
+  &-title {
+    font-size: 32px;
+  }
+  &-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+  &-info {
+    & span {
+      color: #222222;
+      font-size: 18px;
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+  &-sm-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  &-social {
+    & a {
+      display: inline-block;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 40px;
+      margin-right: 8px;
+      color: #003333;
+      border: 1px solid rgba(2, 11, 24, 0.15);
+      font-size: 14px;
+      transition: 0.3s;
+      &:hover {
+        background: var(--ts-theme-color);
+        color: var(--ts-white);
+        border: 1px solid var(--ts-theme-color);
+      }
+    }
+  }
+  &-overlay {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 250;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.6);
+    &-open {
+      right: 0;
+      opacity: 0.7;
+      visibility: visible;
+    }
+  }
+}
