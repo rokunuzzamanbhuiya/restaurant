@@ -595,11 +595,15 @@ img {
   position: relative;
   background-color: var(--ts-theme-color);
   color: #0a1425;
-  padding: 16px 45px;
+  padding: 10px 36px;
   font-size: 16px;
+  font-weight: 700;
   font-family: var(--ts-font-body);
   display: inline-block;
   overflow: hidden;
+}
+.ts-btn-2 {
+  padding: 14px 40px;
 }
 .ts-btn-wrap {
   position: relative;
@@ -629,60 +633,6 @@ img {
 .ts-btn:hover .ts-btn-animate-y-2 {
   opacity: 1;
   transform: translateY(0);
-}
-
-.ts-btn2 {
-  position: relative;
-  background-color: var(--ts-theme-color);
-  color: #0a1425;
-  padding: 16px 45px;
-  font-size: 16px;
-  font-family: var(--ts-font-body);
-  display: inline-block;
-  overflow: hidden;
-}
-.ts-btn2-wrap {
-  position: relative;
-  display: block;
-  overflow: hidden;
-}
-.ts-btn2-wrap span {
-  display: block;
-  transition: 0.2s ease-in-out;
-}
-.ts-btn2-animate-y-2 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  display: block;
-  transform: translateY(100%);
-}
-.ts-btn2:hover {
-  color: var(--ts-white);
-}
-.ts-btn2:hover .ts-btn-animate-y-1 {
-  opacity: 1;
-  transform: translateY(-100%);
-}
-.ts-btn2:hover .ts-btn-animate-y-2 {
-  opacity: 1;
-  transform: translateY(0);
-}
-.ts-btn2:hover::before {
-  left: -110%;
-}
-.ts-btn2::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background-color: #71a2ff;
-  transform: skewX(-20deg);
-  left: 94%;
-  transition: 0.3s;
 }
 
 #preloader {
@@ -966,10 +916,18 @@ img {
 .ts-header-menu ul li {
   list-style: none;
 }
+.ts-header-menu ul li:hover a {
+  color: var(--ts-theme-color);
+}
 .ts-header-menu ul li a {
   color: var(--ts-white);
   font-family: var(--ts-font-menu);
   margin-right: 40px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .ts-hero-area {
@@ -1014,6 +972,75 @@ img {
   height: 49px;
   top: 2%;
   right: -2.5%;
+}
+
+.ts-hero-text {
+  position: absolute;
+  z-index: 5;
+  width: 120px;
+  height: 120px;
+  line-height: 1;
+  bottom: -12%;
+  right: -4.5%;
+  color: var(--ts-heading-color-3);
+  background: var(--ts-theme-color);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 22px;
+  border-radius: 100%;
+  border: 2px dashed var(--ts-theme-color-2);
+  outline: 6px solid var(--ts-theme-color);
+  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
+}
+
+.ts-about-area {
+  position: relative;
+}
+
+.ts-about-img-2 {
+  position: absolute;
+  right: -10%;
+  bottom: 10%;
+}
+
+.ts-about-thumb {
+  position: relative;
+}
+.ts-about-thumb .ts-about-experience {
+  position: absolute;
+  padding: 20px 22px;
+  border-radius: 20px;
+  top: 8%;
+  left: 6%;
+  background: var(--ts-white);
+}
+.ts-about-thumb .ts-about-experience .ts-about-experience-left span {
+  position: absolute;
+  font-size: 26px;
+  font-weight: 700;
+  top: 40%;
+  left: 20.5%;
+}
+.ts-about-thumb .ts-about-experience .ts-about-experience-right span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nav {
+  border-bottom: 1px solid var(--ts-theme-color-2);
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--ts-theme-color-2);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,15 @@
   position: relative;
   background-color: var(--ts-theme-color);
   color: #0a1425;
-  padding: 16px 45px;
+  padding: 10px 36px;
   font-size: 16px;
+  font-weight: 700;
   font-family: var(--ts-font-body);
   display: inline-block;
   overflow: hidden;
+  &-2 {
+    padding: 14px 40px;
+  }
 
   &-wrap {
     position: relative;
@@ -40,63 +44,5 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
-}
-
-.ts-btn2 {
-  position: relative;
-  background-color: var(--ts-theme-color);
-  color: #0a1425;
-  padding: 16px 45px;
-  font-size: 16px;
-  font-family: var(--ts-font-body);
-  display: inline-block;
-  overflow: hidden;
-
-  &-wrap {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    & span {
-      display: block;
-      transition: 0.2s ease-in-out;
-    }
-  }
-
-  &-animate-y-2 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    display: block;
-    transform: translateY(100%);
-  }
-
-  &:hover {
-    & .ts-btn-animate-y-1 {
-      opacity: 1;
-      transform: translateY(-100%);
-    }
-    & .ts-btn-animate-y-2 {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    color: var(--ts-white);
-    &::before {
-      left: -110%;
-    }
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #71a2ff;
-    transform: skewX(-20deg);
-    left: 94%;
-    transition: 0.3s;
   }
 }

@@ -25,10 +25,16 @@
     align-items: center;
     & li {
       list-style: none;
+      &:hover {
+        & a {
+          color: var(--ts-theme-color);
+        }
+      }
       & a {
         color: var(--ts-white);
         font-family: var(--ts-font-menu);
         margin-right: 40px;
+        @include transition(0.3s);
       }
     }
   }

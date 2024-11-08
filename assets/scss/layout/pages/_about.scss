@@ -1,1 +1,53 @@
 @use "../../utils" as *;
+
+.ts-about-area {
+  position: relative;
+}
+.ts-about-img-2 {
+  position: absolute;
+  right: -10%;
+  bottom: 10%;
+}
+
+.ts-about-thumb {
+  position: relative;
+
+  & .ts-about-experience {
+    position: absolute;
+    padding: 20px 22px;
+    border-radius: 20px;
+    top: 8%;
+    left: 6%;
+    background: var(--ts-white);
+    & .ts-about-experience-left {
+      & span {
+        position: absolute;
+        font-size: 26px;
+        font-weight: 700;
+        top: 40%;
+        left: 20.5%;
+      }
+    }
+    & .ts-about-experience-right {
+      & span {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.nav {
+  border-bottom: 1px solid var(--ts-theme-color-2);
+}
+.nav-pills .nav-link {
+  border-radius: 0;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.nav-pills .nav-link.active {
+  background: var(--ts-theme-color-2);
+}

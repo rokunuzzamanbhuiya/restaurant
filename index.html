@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -48,20 +48,20 @@
 
     <!-- ==========Header Area Starts Here========== -->
     <header>
-        <div class="ts-header-area ts-transparent-header">
+        <div id="ts-sticky-header" class="ts-header-area ts-transparent-header">
             <div class="container">
                 <div class="row">
 
                     <div class="ts-header-main d-flex align-items-center justify-content-between">
 
-                        <div class="col-xl-10">
+                        <div class="col-xl-9 d-flex justify-content-start">
                             <div class="ts-header-left d-flex align-items-center">
 
                                 <div class="ts-header-logo">
                                     <a href="#"><img src="assets/img/Logo.png" alt="Restaurant Logo"></a>
                                 </div>
 
-                                <div class="ts-header-menu">
+                                <div class="ts-header-menu d-none d-xl-flex">
                                     <nav class="">
                                         <ul>
                                             <li><a href="#">Home</a></li>
@@ -77,8 +77,9 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2">
-                            <div class="ts-header-btn">
+                        <div class="col-xl-3 d-flex justify-content-end">
+
+                            <div class="ts-header-btn d-none d-xl-flex">
                                 <a class="ts-btn" href="#">
                                     <span class="ts-btn-wrap">
                                         <span class="ts-btn-animate-y-1">BOOK A TABLE</span>
@@ -86,6 +87,11 @@
                                     </span>
                                 </a>
                             </div>
+
+                            <div class="ts-offcanvas-toogle d-flex d-xl-none justify-content-end">
+                                <i class="far fa-bars"></i>
+                            </div>
+
                         </div>
 
                     </div>
@@ -113,7 +119,7 @@
                                     something
                                     beyond flavor.</p>
                                 <div class="ts-hero-btn mt_60">
-                                    <a class="ts-btn" href="#">
+                                    <a class="ts-btn ts-btn-2" href="#">
                                         <span class="ts-btn-wrap">
                                             <span class="ts-btn-animate-y-1">EXPLORE MENU</span>
                                             <span class="ts-btn-animate-y-2">EXPLORE MENU</span>
@@ -138,13 +144,168 @@
 
                     <img class="ts-hero-shape" src="assets/img/hero/hero-shape.png" alt="Restaurant">
 
+                    <h3 class="ts-hero-text">TODAY <br> OFFER</h3>
+
                 </div>
             </div>
         </section>
         <!-- ==========Hero Section Ends Here========== -->
 
         <!-- ==========About Section Starts Here========== -->
-        <section class="ts-about-area">
+        <section class="ts-about-area pt_120 pb_120">
+
+            <img class="ts-about-img-2" src="assets/img/about/about-img-2.png" alt="Restaurant">
+
+            <div class="ts-about-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="ts-about-thumb">
+                                <img src="assets/img/about/about-img.jpg" alt="Restaurant">
+                                <div class="ts-about-experience d-flex align-items-center">
+                                    <div class="ts-about-experience-left mr_10">
+                                        <img src="assets/img/about/about-circle.png" alt="Restaurant">
+                                        <span>50+</span>
+                                    </div>
+                                    <div class="ts-about-experience-right">
+                                        <span>Market <br>
+                                            Experiences</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="ts-about-tab">
+
+                                <div class="ts-about-tab-btn">
+
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-home" type="button" role="tab"
+                                                aria-controls="pills-home" aria-selected="true">About</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-profile" type="button" role="tab"
+                                                aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-contact" type="button" role="tab"
+                                                aria-controls="pills-contact" aria-selected="false">Contact</button>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="ts-about-tab-content">
+
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                            aria-labelledby="pills-home-tab" tabindex="0">
+                                            <h2>Exceptional culinary experience and delicious food</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
+                                                est cursus. Vel hac convallis ipsum, facilisi
+                                                odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
+                                                consectetur adipiscing elit do eiusmod tempor
+                                                incididunt ut labore et dolore magna minim veniam nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                            aria-labelledby="pills-profile-tab" tabindex="0">
+                                            <h2>Exceptional culinary awesome and delicious food</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
+                                                est cursus. Vel hac convallis ipsum, facilisi
+                                                odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
+                                                consectetur adipiscing elit do eiusmod tempor
+                                                incididunt ut labore et dolore magna minim veniam nostrud exercitation.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                            aria-labelledby="pills-contact-tab" tabindex="0">
+                                            <h2>Exceptional culinary nice and delicious food</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
+                                                est cursus. Vel hac convallis ipsum, facilisi
+                                                odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
+                                                consectetur adipiscing elit do eiusmod tempor
+                                                incididunt ut labore et dolore magna minim veniam nostrud exercitation.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ts-about-btn-call d-flex align-items-center">
+
+                                <div class="ts-about-btn">
+                                    <a class="ts-btn ts-btn-2" href="#">
+                                        <span class="ts-btn-wrap">
+                                            <span class="ts-btn-animate-y-1">ABOUT MORE</span>
+                                            <span class="ts-btn-animate-y-2">ABOUT MORE</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="ts-about-call">
+                                    <img src="assets/img/about/call-alt.svg" alt="Restaurant">
+                                    <span>+88 3426 739 485</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ts-about-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xl-4">
+                            <div class="tsabout d-flex align-items-center">
+                                <div class="tsabout__icon">
+                                    <img src="assets/img/about/package.svg" alt="Restaurant">
+                                </div>
+                                <div class="tsabout__content">
+                                    <h3>fast delivery</h3>
+                                    <span>Within 30 minutes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="tsabout d-flex align-items-center">
+                                <div class="tsabout__icon">
+                                    <img src="assets/img/about/medal.svg" alt="Restaurant">
+                                </div>
+                                <div class="tsabout__content">
+                                    <h3>absolute dining</h3>
+                                    <span>Best buffet restaurant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-4">
+                            <div class="tsabout d-flex align-items-center">
+                                <div class="tsabout__icon">
+                                    <img src="assets/img/about/bag.svg" alt="Restaurant">
+                                </div>
+                                <div class="tsabout__content">
+                                    <h3>pickup delivery</h3>
+                                    <span>Grab your food order</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
         </section>
         <!-- ==========About Section Ends Here========== -->
