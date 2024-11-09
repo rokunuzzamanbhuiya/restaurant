@@ -51,3 +51,18 @@
 .nav-pills .nav-link.active {
   background: var(--ts-theme-color-2);
 }
+
+.tsabout {
+  &__icon {
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 90px;
+    background: var(--ts-white);
+    box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 15px;
+  }
+  &__content {
+  }
+}

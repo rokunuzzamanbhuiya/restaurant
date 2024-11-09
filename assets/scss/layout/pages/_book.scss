@@ -1,1 +1,37 @@
 @use "../../utils" as *;
+
+.ts-book-area {
+  position: relative;
+}
+
+p {
+  color: var(--ts-white);
+}
+.ts-book-form {
+}
+
+.ts-book-form input {
+  background: transparent;
+  border: 1px solid #f7f9fa;
+  margin-bottom: 30px;
+  padding: 18px 30px;
+  color: var(--ts-white);
+}
+
+.ts-book-form textarea {
+  background: transparent;
+  border: 1px solid #f7f9fa;
+  padding: 18px 30px 85px 30px;
+  color: var(--ts-white);
+  height: 100%;
+}
+
+.ts-book-form input::placeholder,
+.ts-book-form textarea::placeholder {
+  color: var(--ts-white);
+  font-weight: 500;
+}
+
+.ts-book-form button {
+  margin-top: 30px;
+}

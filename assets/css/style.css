@@ -1046,7 +1046,7 @@ img {
 
 .ts-header-area {
   position: relative;
-  padding: 10px 0;
+  padding: 40px 0;
   background: transparent;
 }
 
@@ -1147,7 +1147,7 @@ img {
   position: absolute;
   z-index: 1;
   top: 0;
-  left: 45.5%;
+  left: 45%;
 }
 .ts-hero-img img {
   width: 700px;
@@ -1232,6 +1232,16 @@ img {
   background: var(--ts-theme-color-2);
 }
 
+.tsabout__icon {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  border-radius: 90px;
+  background: var(--ts-white);
+  box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 15px;
+}
 .ts-food-area {
   position: relative;
   background: #fbf7f2;
@@ -1252,6 +1262,39 @@ img {
   height: 4px;
   background: var(--ts-theme-color-2);
   margin: auto;
+}
+.ts-book-area {
+  position: relative;
+}
+
+p {
+  color: var(--ts-white);
+}
+
+.ts-book-form input {
+  background: transparent;
+  border: 1px solid #f7f9fa;
+  margin-bottom: 30px;
+  padding: 18px 30px;
+  color: var(--ts-white);
+}
+
+.ts-book-form textarea {
+  background: transparent;
+  border: 1px solid #f7f9fa;
+  padding: 18px 30px 85px 30px;
+  color: var(--ts-white);
+  height: 100%;
+}
+
+.ts-book-form input::placeholder,
+.ts-book-form textarea::placeholder {
+  color: var(--ts-white);
+  font-weight: 500;
+}
+
+.ts-book-form button {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
