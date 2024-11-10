@@ -1,5 +1,24 @@
 @use "../utils" as *;
 
+// Video Button
+@keyframes animate-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8),
+      0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 0 rgba(255, 255, 255, 0.8);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+  }
+}
+
 @-webkit-keyframes downup {
   0% {
     -webkit-transform: translateY(-12px);

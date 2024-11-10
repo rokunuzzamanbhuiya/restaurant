@@ -208,6 +208,7 @@ button:focus {
 .uppercase {
   text-transform: uppercase;
 }
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -229,7 +230,7 @@ textarea {
   color: var(--ts-common-black);
   border: none;
   border-bottom: 1px solid #57595c;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   //   padding-left: 26px;
   //   padding-right: 26px;
 

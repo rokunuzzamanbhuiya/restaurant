@@ -220,4 +220,20 @@
       prevEl: ".ts-swiper-test-button-prev",
     },
   });
+
+  /*=============================================
+	=    		Magnific Popup		      =
+=============================================*/
+  /* magnificPopup image view */
+  $(".popup-image").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: false,
+    },
+  });
+
+  /* magnificPopup video view */
+  $(".popup-video").magnificPopup({
+    type: "iframe",
+  });
 })(jQuery);
