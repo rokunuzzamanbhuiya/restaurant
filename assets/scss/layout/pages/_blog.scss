@@ -1,1 +1,91 @@
 @use "../../utils" as *;
+
+.ts-blog-area {
+  position: relative;
+  background: #fbf7f2;
+}
+
+.tsblog {
+  &__content {
+    position: relative;
+    margin-bottom: 20px;
+
+    &:hover {
+      .blog-content-display {
+        bottom: -28px;
+        opacity: 1;
+
+        p.blog-desc {
+          height: 78px;
+        }
+
+        // @media #($max-esmm) {
+        //   bottom: -56px;
+        //   opacity: 1;
+        // }
+      }
+    }
+
+    img {
+      position: relative;
+      border-radius: 20px;
+    }
+
+    .blog-content-display {
+      position: absolute;
+      z-index: 4;
+      width: 80%;
+      background: var(--ts-white);
+      padding: 30px 45px;
+      border-radius: 15px;
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+      bottom: -28px;
+      left: 10%;
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+
+      h3 {
+        a {
+          line-height: 30px;
+          &:hover {
+            color: var(--ts-theme-color);
+          }
+        }
+      }
+
+      p.blog-desc {
+        height: 0px;
+        transition: 1s;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        // @media #($max-esmm) {
+        //   display: none;
+        // }
+      }
+
+      // @media #($max-esmm) {
+      //   bottom: -56px;
+      //   opacity: 1;
+      // }
+
+      .blog-content-upper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        p {
+          margin-right: 18px;
+        }
+
+        // @media #($max-sm) {
+        //   display: grid;
+
+        //   p {
+        //     margin-bottom: 6px;
+        //   }
+        // }
+      }
+    }
+  }
+}

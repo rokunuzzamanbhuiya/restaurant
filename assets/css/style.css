@@ -1398,4 +1398,59 @@ img {
   transition: all 0.3s ease-out 0s;
 }
 
+.ts-blog-area {
+  position: relative;
+  background: #fbf7f2;
+}
+
+.tsblog__content {
+  position: relative;
+  margin-bottom: 20px;
+}
+.tsblog__content:hover .blog-content-display {
+  bottom: -28px;
+  opacity: 1;
+}
+.tsblog__content:hover .blog-content-display p.blog-desc {
+  height: 78px;
+}
+.tsblog__content img {
+  position: relative;
+  border-radius: 20px;
+}
+.tsblog__content .blog-content-display {
+  position: absolute;
+  z-index: 4;
+  width: 80%;
+  background: var(--ts-white);
+  padding: 30px 45px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  bottom: -28px;
+  left: 10%;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+.tsblog__content .blog-content-display h3 a {
+  line-height: 30px;
+}
+.tsblog__content .blog-content-display h3 a:hover {
+  color: var(--ts-theme-color);
+}
+.tsblog__content .blog-content-display p.blog-desc {
+  height: 0px;
+  transition: 1s;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.tsblog__content .blog-content-display .blog-content-upper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.tsblog__content .blog-content-display .blog-content-upper p {
+  margin-right: 18px;
+}
+
 /*# sourceMappingURL=style.css.map */

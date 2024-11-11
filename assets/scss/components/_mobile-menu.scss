@@ -22,16 +22,6 @@
         }
       }
 
-      // & > a:nth-child(1) {
-      //   border-top: 1px solid rgba(1, 15, 28, 0.1);
-      // }
-
-      // &:not(:last-child) {
-      //   & > a {
-      //     border-bottom: 1px solid rgba(1, 15, 28, 0.1);
-      //   }
-      // }
-
       &.active {
         & > a {
           color: var(--ts-theme-color);
