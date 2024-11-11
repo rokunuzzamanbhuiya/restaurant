@@ -1,1 +1,55 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.ts-footer-bg {
+  position: relative;
+}
+
+.tsfooter {
+  &__content {
+    & h4 {
+      color: var(--ts-white);
+      letter-spacing: 1.5px;
+    }
+    & span {
+      color: #f7f8f9;
+    }
+  }
+}
+
+.ts-footer-bottom {
+  & .ts-footer-social {
+    & ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & li {
+        list-style: none;
+        margin: 0 10px;
+        & a {
+          & i {
+            border: 1px solid var(--ts-white);
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 17px;
+            color: var(--ts-white);
+          }
+        }
+      }
+    }
+  }
+
+  & .ts-footer-text {
+    & p {
+      font-size: 21px;
+      text-transform: capitalize;
+      color: var(--ts-white);
+      letter-spacing: 1.5px;
+      & a {
+        color: var(--ts-theme-color);
+      }
+    }
+  }
+}

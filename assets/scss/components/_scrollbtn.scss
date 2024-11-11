@@ -14,7 +14,7 @@
   text-align: center;
   cursor: pointer;
   background: var(--ts-theme-color);
-  border: 2px solid var(--ts-theme-color-2);
+  border: 2px solid var(--ts-theme-color);
   transition: 1s ease;
   @media #{$sm-m} {
     display: none;
@@ -42,7 +42,7 @@
 }
 
 .scroll-top:hover {
-  background: var(--ts-theme-color-2);
+  background: var(--ts-theme-color);
   border: 2px solid var(--ts-theme-color);
 }
 
