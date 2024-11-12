@@ -2,22 +2,37 @@
 
 .ts-about-area {
   position: relative;
+  overflow: hidden;
 }
 .ts-about-img-2 {
   position: absolute;
   right: -10%;
   bottom: 10%;
+  z-index: 1;
+  animation: downup 3s infinite ease-in-out alternate;
+  -webkit-animation: downup 3s infinite ease-in-out alternate;
+  @media #{$lg-m} {
+    right: -306%;
+    bottom: 10%;
+  }
+  @media #{$md-m} {
+    display: none;
+  }
 }
 
 .ts-about-thumb {
   position: relative;
 
+  & img {
+    width: 100%;
+  }
+
   & .ts-about-experience {
     position: absolute;
     padding: 20px 22px;
     border-radius: 20px;
-    top: 8%;
-    left: 6%;
+    top: 6%;
+    left: 4%;
     background: var(--ts-white);
     & .ts-about-experience-left {
       & span {
@@ -52,7 +67,29 @@
   background: var(--ts-theme-color-2);
 }
 
+.ts-about-call {
+  &:hover {
+    & img {
+      -webkit-animation: shake 0.3s linear;
+      animation: shake 0.3s linear;
+    }
+  }
+  & img {
+    @include transition(0.3s);
+  }
+}
+
 .tsabout {
+  position: relative;
+  z-index: 5;
+  &:hover {
+    & .tsabout__icon {
+      & img {
+        -webkit-animation: shake 0.3s linear;
+        animation: shake 0.3s linear;
+      }
+    }
+  }
   &__icon {
     width: 90px;
     height: 90px;
@@ -62,6 +99,9 @@
     box-shadow: 0px 7px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-right: 15px;
+    & img {
+      @include transition(0.3s);
+    }
   }
   &__content {
   }

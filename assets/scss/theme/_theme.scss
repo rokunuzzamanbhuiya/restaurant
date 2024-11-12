@@ -273,3 +273,10 @@ textarea {
   font-size: 15px;
   opacity: 1;
 }
+
+.container {
+  @media #{$lg-m} {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

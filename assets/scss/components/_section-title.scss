@@ -5,7 +5,9 @@
     display: block;
     font-size: 20px;
     font-weight: 700;
+    text-transform: capitalize;
     color: var(--ts-theme-color-2);
+    margin-bottom: 10px;
 
     &::before {
       content: "";
@@ -13,7 +15,7 @@
       height: 10px;
       background: var(--ts-theme-color-2);
       display: inline-block;
-      margin-right: 6px;
+      margin-right: 10px;
       transform: translateY(-2px);
     }
   }

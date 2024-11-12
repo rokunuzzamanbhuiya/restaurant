@@ -2,18 +2,37 @@
 
 .ts-testimonial-area {
   position: relative;
+  overflow: hidden;
 }
 
 .ts-testimonial-bg-img1 {
   position: absolute;
   top: 15%;
   left: -10%;
+  animation: downup 3s infinite ease-in-out alternate;
+  -webkit-animation: downup 3s infinite ease-in-out alternate;
+  @media #{$lg-m} {
+    top: 15%;
+    left: -10%;
+  }
+  @media #{$md-m} {
+    display: none;
+  }
 }
 
 .ts-testimonial-bg-img2 {
   position: absolute;
   right: -10%;
   bottom: 10%;
+  animation: downup 5s infinite ease-in-out alternate;
+  -webkit-animation: downup 5s infinite ease-in-out alternate;
+  @media #{$lg-m} {
+    right: -10%;
+    bottom: 10%;
+  }
+  @media #{$md-m} {
+    display: none;
+  }
 }
 
 .ts-testimonial-content {

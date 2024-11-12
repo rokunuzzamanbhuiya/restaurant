@@ -9,12 +9,38 @@
   position: absolute;
   left: -10%;
   bottom: 10%;
+  z-index: 1;
+  animation: downup 3s infinite ease-in-out alternate;
+  -webkit-animation: downup 3s infinite ease-in-out alternate;
+  @media #{$lg-m} {
+    left: -60%;
+    bottom: 10%;
+  }
+  @media #{$md-m} {
+    display: none;
+  }
 }
 
 .tsfood {
+  position: relative;
   padding: 38px 20px;
   background: var(--ts-white);
+  border-bottom: 6px solid transparent;
+  overflow: hidden;
+  z-index: 5;
+  @include transition(0.3s);
+  &:hover {
+    border-bottom: 6px solid var(--ts-theme-color);
+    & .tsfood__thumb {
+      & img {
+        transform: scale(1.1);
+      }
+    }
+  }
   &__thumb {
+    & img {
+      @include transition(0.3s);
+    }
   }
   &__shape {
     width: 57px;
