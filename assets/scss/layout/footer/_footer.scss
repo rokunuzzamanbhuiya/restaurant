@@ -37,12 +37,15 @@
       justify-content: center;
       & li {
         list-style: none;
-        margin: 0 10px;
+        margin: 0 12px;
         & a {
           border: 1px solid var(--ts-white);
           border-radius: 100%;
-          padding: 20px;
+          padding: 16px;
           text-align: center;
+          @media #{$xs-m} {
+            padding: 14px;
+          }
           &:hover {
             & img {
               -webkit-animation: 0.2s toLeftFromRight forwards;
@@ -50,6 +53,8 @@
             }
           }
           & img {
+            position: relative;
+            margin-top: -3px;
             @include transition(0.3s);
           }
         }
@@ -63,6 +68,9 @@
       text-transform: capitalize;
       color: var(--ts-white);
       letter-spacing: 1.5px;
+      @media #{$xs-m} {
+        font-size: 18px;
+      }
       & a {
         color: var(--ts-theme-color);
       }

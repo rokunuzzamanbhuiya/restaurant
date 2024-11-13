@@ -3,18 +3,22 @@
 .ts-food-area {
   position: relative;
   background: #fbf7f2;
+  @media #{$lg-m} {
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
 }
 
 .ts-food-bg-img {
   position: absolute;
   left: -10%;
-  bottom: 10%;
+  bottom: 20%;
   z-index: 1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
   @media #{$lg-m} {
     left: -60%;
-    bottom: 10%;
+    bottom: 20%;
   }
   @media #{$md-m} {
     display: none;
@@ -49,5 +53,77 @@
     margin: auto;
   }
   &__content {
+    & h4 {
+      @include transition(0.3s);
+      &:hover {
+        color: var(--ts-theme-color);
+      }
+    }
+    & span {
+      color: #0a1425;
+    }
+  }
+}
+
+.ts-food-slider-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  top: 4%;
+  right: 0;
+  @media #{$lg-m} {
+    position: absolute;
+    bottom: -70%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  @media #{$md-m} {
+    position: absolute;
+    bottom: -70%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  @media #{$xs-m} {
+    position: absolute;
+    bottom: -70%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  & .ts-swiper-food-button-prev {
+    & i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 60px;
+      font-size: 18px;
+      background: var(--ts-white);
+      color: var(--ts-common-black);
+      text-align: center;
+      box-shadow: 0px 0px 13.6364px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      @include transition(0.3s);
+      &:hover {
+        color: var(--ts-theme-color-2);
+      }
+    }
+  }
+  & .ts-swiper-food-button-next {
+    & i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 60px;
+      font-size: 18px;
+      background: var(--ts-white);
+      color: var(--ts-common-black);
+      text-align: center;
+      box-shadow: 0px 0px 13.6364px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      @include transition(0.3s);
+      &:hover {
+        color: var(--ts-theme-color-2);
+      }
+    }
   }
 }

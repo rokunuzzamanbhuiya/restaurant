@@ -10,6 +10,7 @@
   font-family: var(--ts-font-body);
   display: inline-block;
   overflow: hidden;
+  z-index: 5;
   &-2 {
     padding: 14px 40px;
   }

@@ -122,16 +122,14 @@
   });
 
   /*=============================================
-  	=    Menu sticky & Scroll to top      =
+  	=    Menu sticky      =
   =============================================*/
   $(window).on("scroll", function () {
     var scroll = $(window).scrollTop();
     if (scroll < 245) {
       $("#ts-sticky-header").removeClass("ts-sticky-menu");
-      // $(".scroll-to-target").removeClass("open");
     } else {
       $("#ts-sticky-header").addClass("ts-sticky-menu");
-      // $(".scroll-to-target").addClass("open");
     }
   });
 
@@ -188,36 +186,67 @@
   });
 
   /*=============================================
-  	=  Testimonial Swiper Slider Active		=
-  =============================================*/
-
-  // testimonial slider
-  var swiper = new Swiper(".ts-testimonial-active", {
-    slidesPerView: 1,
+	=    		Food Swiper Slider		      =
+=============================================*/
+  var swiper = new Swiper(".tsFoodSwiper", {
+    slidesPerView: 4,
     spaceBetween: 30,
-
-    paginationClickable: true,
-    mousewheelControl: true,
-    loop: true,
-    speed: 700,
-    // watchSlidesProgress: true,
-
     keyboard: {
       enabled: true,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    autoplay: {
+      delay: 4000,
     },
-    // mousewheel: {
-    //   invert: true,
-    // },
+    loop: true,
+    navigation: {
+      nextEl: ".ts-swiper-food-button-next",
+      prevEl: ".ts-swiper-food-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1400: {
+        slidesPerView: 4,
+      },
+    },
+  });
+
+  /*=============================================
+	=    		Testimonial Swiper Slider		      =
+=============================================*/
+  var swiper = new Swiper(".tsTestimonialSwiper", {
+    slidesPerView: 1,
+    keyboard: {
+      enabled: true,
+    },
     autoplay: {
       delay: 6000,
     },
+    loop: true,
     navigation: {
-      nextEl: ".ts-swiper-test-button-next",
-      prevEl: ".ts-swiper-test-button-prev",
+      nextEl: ".ts-swiper-testimonial-button-next",
+      prevEl: ".ts-swiper-testimonial-button-prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      576: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 1,
+      },
+      1400: {
+        slidesPerView: 1,
+      },
     },
   });
 

@@ -211,7 +211,7 @@
 
             <img class="ts-about-img-2" src="assets/img/about/about-img-2.png" alt="Restaurant">
 
-            <div class="ts-about-top mb_74">
+            <div class="ts-about-top">
                 <div class="container">
                     <div class="row g-5">
                         <div class="col-xl-6">
@@ -235,7 +235,7 @@
 
                                 <div class="ts-about-tab-btn">
 
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <ul class="nav nav-pills mb_25" id="pills-tab" role="tablist">
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                                                 data-bs-target="#pills-home" type="button" role="tab"
@@ -260,7 +260,7 @@
                                     <div class="tab-content" id="pills-tabContent">
                                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                             aria-labelledby="pills-home-tab" tabindex="0">
-                                            <h2>Exceptional culinary experience and delicious food</h2>
+                                            <h2 class="mb_15">Exceptional culinary experience and delicious food</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
                                                 est cursus. Vel hac convallis ipsum, facilisi
                                                 odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
@@ -270,7 +270,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                             aria-labelledby="pills-profile-tab" tabindex="0">
-                                            <h2>Exceptional culinary awesome and delicious food</h2>
+                                            <h2 class="mb_15">Exceptional culinary awesome and delicious food</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
                                                 est cursus. Vel hac convallis ipsum, facilisi
                                                 odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
@@ -280,7 +280,7 @@
                                         </div>
                                         <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                                             aria-labelledby="pills-contact-tab" tabindex="0">
-                                            <h2>Exceptional culinary nice and delicious food</h2>
+                                            <h2 class="mb_15">Exceptional culinary nice and delicious food</h2>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
                                                 est cursus. Vel hac convallis ipsum, facilisi
                                                 odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
@@ -294,9 +294,9 @@
 
                             </div>
 
-                            <div class="ts-about-btn-call d-flex align-items-center">
+                            <div class="ts-about-btn-call mt_32">
 
-                                <div class="ts-about-btn mr_30">
+                                <div class="ts-about-btn mr_32">
                                     <a class="ts-btn ts-btn-2" href="#">
                                         <span class="ts-btn-wrap">
                                             <span class="ts-btn-animate-y-1">ABOUT MORE</span>
@@ -307,7 +307,8 @@
 
                                 <div class="ts-about-call">
                                     <img src="assets/img/about/call-alt.svg" alt="Restaurant">
-                                    <span>+88 3426 739 485</span>
+
+                                    <span><a href="tel:3426 739 485">+88 3426 739 485</a></span>
 
                                 </div>
 
@@ -318,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="ts-about-bottom">
+            <div class="ts-about-bottom mt_75">
                 <div class="container">
                     <div class="row g-5">
 
@@ -385,71 +386,114 @@
                     </div>
 
                     <div class="col-xl-6">
-
+                        <div class="ts-food-slider-arrow">
+                            <div class="ts-swiper-food-button-prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="ts-swiper-food-button-next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
             <div class="container">
-                <div class="row g-4">
+                <div class="row">
 
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="tsfood text-center">
-                            <div class="tsfood__thumb mb_20">
-                                <img src="assets/img/food/food-img-1.png" alt="Restaurant">
-                            </div>
-                            <div class="tsfood__shape">
-                            </div>
-                            <div class="tsfood__content mt_20">
+                    <div class="swiper tsFoodSwiper">
+                        <div class="swiper-wrapper">
 
-                                <h4><a href="#">vegetables burger</a></h4>
-                                <span>Barbecue Italian cuisine pizza</span>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_20">
+                                        <img src="assets/img/food/food-img-1.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_30">
+
+                                        <h4><a href="#">vegetables burger</a></h4>
+                                        <span>Barbecue Italian cuisine pizza</span>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_30">
+                                        <img src="assets/img/food/food-img-2.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_20">
+                                        <h4><a href="#">Spacial Pizza</a></h4>
+                                        <span>Barbecue Italian cuisine pizza</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_30">
+                                        <img src="assets/img/food/food-img-3.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_20">
+                                        <h4><a href="#">Spacial French fries</a></h4>
+                                        <span>Barbecue Italian cuisine</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_30">
+                                        <img src="assets/img/food/food-img-4.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_20">
+                                        <h4><a href="#">Cuisine Chicken</a></h4>
+                                        <span>Japanese Cuisine Chicken</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_30">
+                                        <img src="assets/img/food/food-img-2.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_20">
+                                        <h4><a href="#">Spacial Pizza</a></h4>
+                                        <span>Barbecue Italian cuisine pizza</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tsfood text-center">
+                                    <div class="tsfood__thumb mb_30">
+                                        <img src="assets/img/food/food-img-3.png" alt="Restaurant">
+                                    </div>
+                                    <div class="tsfood__shape">
+                                    </div>
+                                    <div class="tsfood__content mt_20">
+                                        <h4><a href="#">Spacial French fries</a></h4>
+                                        <span>Barbecue Italian cuisine</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="tsfood text-center">
-                            <div class="tsfood__thumb mb_20">
-                                <img src="assets/img/food/food-img-2.png" alt="Restaurant">
-                            </div>
-                            <div class="tsfood__shape">
-                            </div>
-                            <div class="tsfood__content mt_20">
-                                <h4><a href="#">Spacial Pizza</a></h4>
-                                <span>Barbecue Italian cuisine pizza</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="tsfood text-center">
-                            <div class="tsfood__thumb mb_20">
-                                <img src="assets/img/food/food-img-3.png" alt="Restaurant">
-                            </div>
-                            <div class="tsfood__shape">
-                            </div>
-                            <div class="tsfood__content mt_20">
-                                <h4><a href="#">Spacial French fries</a></h4>
-                                <span>Barbecue Italian cuisine</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-6 col-md-12">
-                        <div class="tsfood text-center">
-                            <div class="tsfood__thumb mb_20">
-                                <img src="assets/img/food/food-img-4.png" alt="Restaurant">
-                            </div>
-                            <div class="tsfood__shape">
-                            </div>
-                            <div class="tsfood__content mt_20">
-                                <h4><a href="#">Cuisine Chicken</a></h4>
-                                <span>Japanese Cuisine Chicken</span>
-                            </div>
-                        </div>
-                    </div>
 
                 </div>
             </div>
@@ -526,7 +570,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-xl-7">
+                    <div class="col-xl-8">
 
                         <div class="ts-section-title-wrapper mb_60">
                             <span class="ts-section-subtitle">Customers Testimonial
@@ -536,53 +580,160 @@
 
                     </div>
 
-                    <div class="col-xl-5">
-
+                    <div class="col-xl-4">
+                        <div class="ts-testimonial-slider-arrow">
+                            <div class="ts-swiper-testimonial-button-prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="ts-swiper-testimonial-button-next">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
 
             <div class="container">
-                <div class="row g-0 flex-row-reverse">
+                <!-- <div class="row g-0 flex-row-reverse"> -->
 
 
+                <div class="swiper tsTestimonialSwiper">
+                    <div class="swiper-wrapper">
 
-                    <div class="col-xl-7">
-                        <div class="ts-testimonial-thumb">
-                            <img src="assets/img/testimonial/testimonial-bg-video.jpg" alt="Restaurant">
-                            <div class="ts-testimonial-play-btn">
-                                <a class="popup-video" href="https://www.youtube.com/watch?v=TfU0qjuZkJ4">
-                                    <i class="fas fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-xl-5">
-                        <div class="ts-testimonial-content">
-                            <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png" alt="Restaurant">
-                            <span>
-                                You can't go wrong with Chicken Mandi, I had it twice. The chicken was cooked
-                                perfectly,
-                                juicy & soft (usually mandi
-                                chicken is a bit dry). I would defiantly recommend it.
-                            </span>
-                            <div class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
-                                <div class="ts-testimonial-name-desig">
-                                    <h5>Khalid Al Dawsry</h5>
-                                    <span>Jeddah, Saudi</span>
+                        <div class="swiper-slide">
+                            <div class="row g-0 flex-row-reverse">
+                                <div class="col-xl-7">
+                                    <div class="ts-testimonial-thumb">
+                                        <img src="assets/img/testimonial/testimonial-bg-video1.jpg" alt="Restaurant">
+                                        <div class="ts-testimonial-play-btn">
+                                            <a class="popup-video" href="https://www.youtube.com/watch?v=TfU0qjuZkJ4">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="ts-testimonial-pic">
-                                    <img src="assets/img/testimonial/testimonial-pic1.png" alt="Restaurant">
-                                </div>
-                            </div>
-                            <img class="ts-testimonial-shape" src="assets/img/testimonial/testimonial-shape.svg"
-                                alt="Restaurant">
-                        </div>
-                    </div>
 
+                                <div class="col-xl-5">
+                                    <div class="ts-testimonial-content">
+                                        <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png"
+                                            alt="Restaurant">
+                                        <span>
+                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was
+                                            cooked
+                                            perfectly,
+                                            juicy & soft (usually mandi
+                                            chicken is a bit dry). I would defiantly recommend it.
+                                        </span>
+                                        <div
+                                            class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
+                                            <div class="ts-testimonial-name-desig">
+                                                <h5>Khalid Al Dawsry</h5>
+                                                <span>Jeddah, Saudi</span>
+                                            </div>
+                                            <div class="ts-testimonial-pic">
+                                                <img src="assets/img/testimonial/testimonial-pic1.png" alt="Restaurant">
+                                            </div>
+                                        </div>
+                                        <img class="ts-testimonial-shape"
+                                            src="assets/img/testimonial/testimonial-shape.svg" alt="Restaurant">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="row g-0 flex-row-reverse">
+                                <div class="col-xl-7">
+                                    <div class="ts-testimonial-thumb">
+                                        <img src="assets/img/testimonial/testimonial-bg-video2.jpg" alt="Restaurant">
+                                        <div class="ts-testimonial-play-btn">
+                                            <a class="popup-video" href="https://www.youtube.com/watch?v=TfU0qjuZkJ4">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-5">
+                                    <div class="ts-testimonial-content">
+                                        <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png"
+                                            alt="Restaurant">
+                                        <span>
+                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was
+                                            cooked
+                                            perfectly,
+                                            juicy & soft (usually mandi
+                                            chicken is a bit dry). I would defiantly recommend it.
+                                        </span>
+                                        <div
+                                            class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
+                                            <div class="ts-testimonial-name-desig">
+                                                <h5>Malida Ml Dawsry</h5>
+                                                <span>Jeddah, Saudi</span>
+                                            </div>
+                                            <div class="ts-testimonial-pic">
+                                                <img src="assets/img/testimonial/testimonial-pic2.png" alt="Restaurant">
+                                            </div>
+                                        </div>
+                                        <img class="ts-testimonial-shape"
+                                            src="assets/img/testimonial/testimonial-shape.svg" alt="Restaurant">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="row g-0 flex-row-reverse">
+                                <div class="col-xl-7">
+                                    <div class="ts-testimonial-thumb">
+                                        <img src="assets/img/testimonial/testimonial-bg-video3.jpg" alt="Restaurant">
+                                        <div class="ts-testimonial-play-btn">
+                                            <a class="popup-video" href="https://www.youtube.com/watch?v=TfU0qjuZkJ4">
+                                                <i class="fas fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-5">
+                                    <div class="ts-testimonial-content">
+                                        <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png"
+                                            alt="Restaurant">
+                                        <span>
+                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was
+                                            cooked
+                                            perfectly,
+                                            juicy & soft (usually mandi
+                                            chicken is a bit dry). I would defiantly recommend it.
+                                        </span>
+                                        <div
+                                            class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
+                                            <div class="ts-testimonial-name-desig">
+                                                <h5>Whalid Hl Dawsry</h5>
+                                                <span>Jeddah, Saudi</span>
+                                            </div>
+                                            <div class="ts-testimonial-pic">
+                                                <img src="assets/img/testimonial/testimonial-pic3.png" alt="Restaurant">
+                                            </div>
+                                        </div>
+                                        <img class="ts-testimonial-shape"
+                                            src="assets/img/testimonial/testimonial-shape.svg" alt="Restaurant">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
 
         </section>
@@ -724,9 +875,9 @@
 
 
     <!-- ==========Footer Area Starts Here========== -->
-    <footer class="ts-footer-bg ts-bg-img-cover pt_120 pb_120" data-background="assets/img/footer/footer.jpg">
+    <footer class="ts-footer-bg ts-bg-img-cover pt_120 pb_100" data-background="assets/img/footer/footer.jpg">
 
-        <div class="ts-section-title-wrapper text-center mb_60">
+        <div class="ts-section-title-wrapper text-center mb_40">
             <h2 class="ts-section-title ts-section-title-white">We ready to have you the best dining experiences</h2>
         </div>
 
@@ -790,9 +941,9 @@
             </div>
         </div>
 
-        <div class="ts-footer-bottom text-center mt_80">
+        <div class="ts-footer-bottom text-center mt_134">
 
-            <div class="ts-footer-social mb_22">
+            <div class="ts-footer-social mb_35">
                 <ul>
                     <li><a href="#"><img src="assets/img/footer/facebook.png" alt="Restaurant"></a></li>
                     <li><a href="#"><img src="assets/img/footer/x.png" alt="Restaurant"></a></li>
@@ -801,7 +952,7 @@
                 </ul>
             </div>
             <div class="ts-footer-text">
-                <p class="mb_15">© 2024 <a href="#">Niomax</a> All Rights Reserved</p>
+                <p>© 2024 <a href="#">Niomax</a> All Rights Reserved</p>
             </div>
 
         </div>

@@ -3,17 +3,27 @@
 .ts-testimonial-area {
   position: relative;
   overflow: hidden;
+  z-index: 2;
+  @media #{$lg-m} {
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
 }
 
 .ts-testimonial-bg-img1 {
   position: absolute;
   top: 15%;
   left: -10%;
+  z-index: -1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
-  @media #{$lg-m} {
-    top: 15%;
-    left: -10%;
+  @media #{$xxl-m} {
+    top: 20%;
+    left: -12%;
+  }
+  @media #{$xl-m} {
+    top: 28%;
+    left: -12%;
   }
   @media #{$md-m} {
     display: none;
@@ -22,7 +32,7 @@
 
 .ts-testimonial-bg-img2 {
   position: absolute;
-  right: -10%;
+  right: -7%;
   bottom: 10%;
   animation: downup 5s infinite ease-in-out alternate;
   -webkit-animation: downup 5s infinite ease-in-out alternate;
@@ -42,6 +52,10 @@
   width: 100%;
   height: 100%;
 
+  @media #{$xs-m} {
+    padding: 95px 45px 75px;
+  }
+
   & .ts-testimonial-quote {
     position: absolute;
     margin-top: -12px;
@@ -53,9 +67,18 @@
   }
 
   & .ts-testimonial-info {
-    // position: relative;
+    position: relative;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--ts-black);
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      right: 0;
+      width: 42px;
+      height: 4px;
+      background: var(--ts-theme-color-2);
+    }
     & .ts-testimonial-name-desig {
       & h5 {
         font-size: 18px;
@@ -85,7 +108,7 @@
   width: 100%;
   height: 100%;
   & img {
-    // position: relative;
+    position: relative;
     width: 100%;
     height: 100%;
   }
@@ -95,6 +118,16 @@
     top: 40%;
     left: 40%;
     transform: translate(50%, 50%);
+    @media #{$xs-m} {
+      top: 38%;
+      left: 38%;
+      transform: translate(50%, 50%);
+    }
+    @media (max-width: 375.98px) {
+      top: 30%;
+      left: 30%;
+      transform: translate(50%, 50%);
+    }
     &:hover {
       & i {
         background: var(--ts-theme-color-2);
@@ -110,6 +143,69 @@
       background: var(--ts-theme-color);
       animation: animate-pulse 3s linear infinite;
       @include transition(0.3s);
+    }
+  }
+}
+
+.ts-testimonial-slider-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  top: 4%;
+  right: 0;
+  @media #{$lg-m} {
+    position: absolute;
+    bottom: -84%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  @media #{$md-m} {
+    position: absolute;
+    bottom: -84%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  @media #{$xs-m} {
+    position: absolute;
+    bottom: -84%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  & .ts-swiper-testimonial-button-prev {
+    & i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 60px;
+      font-size: 18px;
+      background: var(--ts-white);
+      color: var(--ts-common-black);
+      text-align: center;
+      box-shadow: 0px 0px 13.6364px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      @include transition(0.3s);
+      &:hover {
+        color: var(--ts-theme-color-2);
+      }
+    }
+  }
+  & .ts-swiper-testimonial-button-next {
+    & i {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 60px;
+      font-size: 18px;
+      background: var(--ts-white);
+      color: var(--ts-common-black);
+      text-align: center;
+      box-shadow: 0px 0px 13.6364px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      @include transition(0.3s);
+      &:hover {
+        color: var(--ts-theme-color-2);
+      }
     }
   }
 }

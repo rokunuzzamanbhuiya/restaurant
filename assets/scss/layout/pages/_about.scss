@@ -67,6 +67,17 @@
   background: var(--ts-theme-color-2);
 }
 
+.ts-about-btn-call {
+  display: flex;
+  align-items: center;
+  @media #{$xs-m} {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 18px;
+  }
+}
+
 .ts-about-call {
   &:hover {
     & img {
@@ -75,7 +86,12 @@
     }
   }
   & img {
+    margin-right: 4px;
     @include transition(0.3s);
+  }
+  & span {
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
