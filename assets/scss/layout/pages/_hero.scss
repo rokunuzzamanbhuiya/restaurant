@@ -32,6 +32,10 @@
     font-size: 80px;
     background: transparent;
   }
+  @media #{$xs-m} {
+    font-size: 60px;
+    background: transparent;
+  }
 }
 
 .ts-hero-paragraph {
@@ -132,5 +136,11 @@
   @media #{$lg-m} {
     bottom: 4%;
     right: 4%;
+  }
+  @media #{$xs-m} {
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+    font-size: 28px;
   }
 }

@@ -222,24 +222,20 @@ input[type="url"],
 textarea {
   outline: none;
   background-color: transparent;
-  height: 56px;
+  height: 45px;
   width: 100%;
-  line-height: 56px;
-  font-size: 15px;
+  line-height: 45px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--ts-common-black);
-  border: none;
-  border-bottom: 1px solid #57595c;
-  // text-transform: uppercase;
-  //   padding-left: 26px;
-  //   padding-right: 26px;
+  border: 1px solid #e7e7e7;
 
   @include ts-placeholder {
-    color: #57595c;
+    color: #f7f9fa;
   }
 
   &:focus {
-    border-color: #57595c;
+    border-color: #f7f9fa;
     &::placeholder {
       opacity: 1;
     }
@@ -248,8 +244,8 @@ textarea {
 
 textarea {
   line-height: 1.4;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 *::-moz-selection {

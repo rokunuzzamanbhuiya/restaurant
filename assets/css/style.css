@@ -249,14 +249,13 @@ input[type=url],
 textarea {
   outline: none;
   background-color: transparent;
-  height: 56px;
+  height: 45px;
   width: 100%;
-  line-height: 56px;
-  font-size: 15px;
+  line-height: 45px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--ts-common-black);
-  border: none;
-  border-bottom: 1px solid #57595c;
+  border: 1px solid #e7e7e7;
 }
 input[type=text]::-webkit-input-placeholder,
 input[type=email]::-webkit-input-placeholder,
@@ -265,7 +264,7 @@ input[type=number]::-webkit-input-placeholder,
 input[type=password]::-webkit-input-placeholder,
 input[type=url]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #57595c;
+  color: #f7f9fa;
 }
 input[type=text]:-moz-placeholder,
 input[type=email]:-moz-placeholder,
@@ -274,7 +273,7 @@ input[type=number]:-moz-placeholder,
 input[type=password]:-moz-placeholder,
 input[type=url]:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #57595c;
+  color: #f7f9fa;
 }
 input[type=text]::-moz-placeholder,
 input[type=email]::-moz-placeholder,
@@ -283,7 +282,7 @@ input[type=number]::-moz-placeholder,
 input[type=password]::-moz-placeholder,
 input[type=url]::-moz-placeholder,
 textarea::-moz-placeholder {
-  color: #57595c;
+  color: #f7f9fa;
 }
 input[type=text]::-ms-input-placeholder,
 input[type=email]::-ms-input-placeholder,
@@ -292,7 +291,7 @@ input[type=number]::-ms-input-placeholder,
 input[type=password]::-ms-input-placeholder,
 input[type=url]::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #57595c;
+  color: #f7f9fa;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -301,7 +300,7 @@ input[type=number]:focus,
 input[type=password]:focus,
 input[type=url]:focus,
 textarea:focus {
-  border-color: #57595c;
+  border-color: #f7f9fa;
 }
 input[type=text]:focus::placeholder,
 input[type=email]:focus::placeholder,
@@ -315,8 +314,8 @@ textarea:focus::placeholder {
 
 textarea {
   line-height: 1.4;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 *::-moz-selection {
@@ -875,7 +874,7 @@ img {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: var(--ts-theme-color-2);
   margin-bottom: 10px;
 }
@@ -887,6 +886,9 @@ img {
   display: inline-block;
   margin-right: 10px;
   transform: translateY(-2px);
+}
+.ts-section-title {
+  text-transform: uppercase;
 }
 .ts-section-title-white {
   color: var(--ts-white);
@@ -1360,6 +1362,12 @@ img {
     background: transparent;
   }
 }
+@media (max-width: 575.98px) {
+  .ts-hero-title {
+    font-size: 60px;
+    background: transparent;
+  }
+}
 
 .ts-hero-paragraph {
   font-size: 24px;
@@ -1477,6 +1485,14 @@ img {
     right: 4%;
   }
 }
+@media (max-width: 575.98px) {
+  .ts-hero-text {
+    width: 100px;
+    height: 100px;
+    padding: 18px;
+    font-size: 28px;
+  }
+}
 
 .ts-about-area {
   position: relative;
@@ -1516,6 +1532,13 @@ img {
   top: 6%;
   left: 4%;
   background: var(--ts-white);
+}
+@media (max-width: 575.98px) {
+  .ts-about-thumb .ts-about-experience {
+    top: 4%;
+    left: 3%;
+    padding: 12px 14px;
+  }
 }
 .ts-about-thumb .ts-about-experience .ts-about-experience-left span {
   position: absolute;
@@ -1600,6 +1623,7 @@ img {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .ts-food-area {
   position: relative;
   background: #fbf7f2;
@@ -1756,20 +1780,30 @@ img {
 
 .ts-book-paragraph {
   color: var(--ts-white);
+  padding: 0 100px 0 0;
+}
+@media (max-width: 991.98px) {
+  .ts-book-paragraph {
+    padding: 0;
+  }
+}
+
+.ts-book-form {
+  position: relative;
 }
 
 .ts-book-form input {
   background: transparent;
-  border: 1px solid #f7f9fa;
-  margin-bottom: 30px;
-  padding: 18px 30px;
+  border: 1px solid #e7e7e7;
+  margin-bottom: 24px;
+  padding: 10px 24px;
   color: var(--ts-white);
 }
 
 .ts-book-form textarea {
   background: transparent;
-  border: 1px solid #f7f9fa;
-  padding: 18px 30px 85px 30px;
+  border: 1px solid #e7e7e7;
+  padding: 10px 24px 85px 24px;
   color: var(--ts-white);
   height: 100%;
 }
@@ -1780,8 +1814,35 @@ img {
   font-weight: 500;
 }
 
+input[type=date] {
+  position: relative;
+  outline: none;
+  background-color: transparent;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e7e7e7;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  color: var(--ts-theme-color) !important;
+  background: rgba(197, 197, 197, 0.2);
+  position: relative;
+}
+
+input[type=date]:focus {
+  border-color: #e7e7e7 !important;
+}
+
 .ts-book-form button {
   margin-top: 30px;
+}
+
+.ajax-response {
+  color: var(--ts-theme-color);
 }
 
 .ts-testimonial-area {

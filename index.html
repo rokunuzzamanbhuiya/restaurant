@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -66,11 +66,11 @@
                                     <nav class="ts-mobile-menu-active">
                                         <ul>
                                             <li><a href="#">Home</a></li>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Clients</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#food">Portfolio</a></li>
+                                            <li><a href="#testimonial">Clients</a></li>
+                                            <li><a href="#blog">Blog</a></li>
+                                            <li><a href="#footer">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -81,7 +81,7 @@
                         <div class="col-xl-3 d-flex justify-content-end">
 
                             <div class="ts-header-btn d-none d-xl-flex">
-                                <a class="ts-btn" href="#">
+                                <a class="ts-btn" href="#book">
                                     <span class="ts-btn-wrap">
                                         <span class="ts-btn-animate-y-1">BOOK A TABLE</span>
                                         <span class="ts-btn-animate-y-2">BOOK A TABLE</span>
@@ -207,7 +207,7 @@
         <!-- ==========Hero Section Ends Here========== -->
 
         <!-- ==========About Section Starts Here========== -->
-        <section class="ts-about-area pt_120 pb_120">
+        <section id="about" class="ts-about-area pt_120 pb_120">
 
             <img class="ts-about-img-2" src="assets/img/about/about-img-2.png" alt="Restaurant">
 
@@ -271,21 +271,23 @@
                                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                             aria-labelledby="pills-profile-tab" tabindex="0">
                                             <h2 class="mb_15">Exceptional culinary awesome and delicious food</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
-                                                est cursus. Vel hac convallis ipsum, facilisi
+                                            <p>Vel hac convallis ipsum, facilisi
                                                 odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
                                                 consectetur adipiscing elit do eiusmod tempor
                                                 incididunt ut labore et dolore magna minim veniam nostrud exercitation.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
+                                                est cursus.
                                             </p>
                                         </div>
                                         <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                                             aria-labelledby="pills-contact-tab" tabindex="0">
                                             <h2 class="mb_15">Exceptional culinary nice and delicious food</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed
+                                            <p>Ornare non sed
                                                 est cursus. Vel hac convallis ipsum, facilisi
                                                 odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet
                                                 consectetur adipiscing elit do eiusmod tempor
                                                 incididunt ut labore et dolore magna minim veniam nostrud exercitation.
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                             </p>
                                         </div>
                                     </div>
@@ -308,7 +310,7 @@
                                 <div class="ts-about-call">
                                     <img src="assets/img/about/call-alt.svg" alt="Restaurant">
 
-                                    <span><a href="tel:3426 739 485">+88 3426 739 485</a></span>
+                                    <span><a href="tel:3426739485">+88 3426 739 485</a></span>
 
                                 </div>
 
@@ -367,7 +369,7 @@
         <!-- ==========About Section Ends Here========== -->
 
         <!-- ==========Food Section Starts Here========== -->
-        <section class="ts-food-area pt_120 pb_120">
+        <section id="food" class="ts-food-area pt_120 pb_120">
 
             <img class="ts-food-bg-img" src="assets/img/food/food-bg-img.png" alt="Restaurant">
 
@@ -502,7 +504,8 @@
         <!-- ==========Food Section Ends Here========== -->
 
         <!-- ==========Book Section Starts Here========== -->
-        <section class="ts-book-area ts-bg-img-cover pt_120 pb_120" data-background="assets/img/book/book-bg.jpg">
+        <section id="book" class="ts-book-area ts-bg-img-cover pt_120 pb_120"
+            data-background="assets/img/book/book-bg.jpg">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -519,17 +522,17 @@
 
                         <div class="ts-book-form">
 
-                            <form action="#">
+                            <form id="contact-form" action="assets/mail.php" method="POST">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" placeholder="Your Name*" class="name" name="name" required>
+                                        <input type="text" placeholder="Your Name *" class="name" name="name" required>
                                     </div>
                                     <div class="col-md-6">
                                         <input type="email" placeholder="Your Email" class="email" name="email"
                                             required>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" placeholder="Reservation Date" class="date" name="date"
+                                        <input type="date" placeholder="Reservation Date" class="date" name="date"
                                             required>
                                     </div>
                                     <div class="col-md-6">
@@ -537,19 +540,19 @@
                                             required>
                                     </div>
                                     <div class="col-xl-12">
-                                        <textarea rows="2" placeholder="Message" class="message" required></textarea>
+                                        <textarea rows="2" placeholder="Message" class="message" name="message"
+                                            required></textarea>
                                     </div>
                                     <div class="col-xl-12">
                                         <button type="submit" class="ts-btn">
-
                                             <span class="ts-btn-wrap">
                                                 <span class="ts-btn-animate-y-1">BOOK NOW</span>
                                                 <span class="ts-btn-animate-y-2">BOOK NOW</span>
                                             </span>
-
                                         </button>
                                     </div>
                                 </div>
+                                <p class="ajax-response mt_15"></p>
                             </form>
                         </div>
 
@@ -562,7 +565,7 @@
         <!-- ==========Book Section Ends Here========== -->
 
         <!-- ==========Testimonial Section Starts Here========== -->
-        <section class="ts-testimonial-area pt_120 pb_120">
+        <section id="testimonial" class="ts-testimonial-area pt_120 pb_120">
 
             <img class="ts-testimonial-bg-img1" src="assets/img/testimonial/testimonial-bg-img1.png" alt="Restaurant">
             <img class="ts-testimonial-bg-img2" src="assets/img/testimonial/testimonial-bg-img2.png" alt="Restaurant">
@@ -663,16 +666,17 @@
                                         <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png"
                                             alt="Restaurant">
                                         <span>
-                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was
+                                            I would defiantly recommend it. You can't go wrong with Chicken Mandi, I had
+                                            it twice. The chicken was
                                             cooked
                                             perfectly,
                                             juicy & soft (usually mandi
-                                            chicken is a bit dry). I would defiantly recommend it.
+                                            chicken is a bit dry).
                                         </span>
                                         <div
                                             class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
                                             <div class="ts-testimonial-name-desig">
-                                                <h5>Malida Ml Dawsry</h5>
+                                                <h5>Malida Ml Pawsry</h5>
                                                 <span>Jeddah, Saudi</span>
                                             </div>
                                             <div class="ts-testimonial-pic">
@@ -706,16 +710,17 @@
                                         <img class="ts-testimonial-quote" src="assets/img/testimonial/quote.png"
                                             alt="Restaurant">
                                         <span>
-                                            You can't go wrong with Chicken Mandi, I had it twice. The chicken was
+                                            The chicken was
                                             cooked
                                             perfectly,
                                             juicy & soft (usually mandi
-                                            chicken is a bit dry). I would defiantly recommend it.
+                                            chicken is a bit dry). You can't go wrong with Chicken Mandi, I had it
+                                            twice. I would defiantly recommend it.
                                         </span>
                                         <div
                                             class="ts-testimonial-info d-flex align-items-center justify-content-between mt_184">
                                             <div class="ts-testimonial-name-desig">
-                                                <h5>Whalid Hl Dawsry</h5>
+                                                <h5>Whalid Hl Nawsry</h5>
                                                 <span>Jeddah, Saudi</span>
                                             </div>
                                             <div class="ts-testimonial-pic">
@@ -740,7 +745,7 @@
         <!-- ==========Testimonial Section Ends Here========== -->
 
         <!-- ==========Blog Section Starts Here========== -->
-        <section class="ts-blog-area pt_120 pb_120">
+        <section id="blog" class="ts-blog-area pt_120 pb_120">
 
             <div class="ts-section-title-wrapper text-center mb_60">
                 <span class="ts-section-subtitle">Our Latest Blog
@@ -865,17 +870,14 @@
 
                 </div>
             </div>
-
         </section>
         <!-- ==========Blog Section Ends Here========== -->
-
-
     </main>
     <!-- ==========Main Area Ends Here========== -->
 
-
     <!-- ==========Footer Area Starts Here========== -->
-    <footer class="ts-footer-bg ts-bg-img-cover pt_120 pb_100" data-background="assets/img/footer/footer.jpg">
+    <footer id="footer" class="ts-footer-bg ts-bg-img-cover pt_120 pb_100"
+        data-background="assets/img/footer/footer.jpg">
 
         <div class="ts-section-title-wrapper text-center mb_40">
             <h2 class="ts-section-title ts-section-title-white">We ready to have you the best dining experiences</h2>
@@ -967,6 +969,7 @@
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

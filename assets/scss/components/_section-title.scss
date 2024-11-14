@@ -5,7 +5,7 @@
     display: block;
     font-size: 20px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: var(--ts-theme-color-2);
     margin-bottom: 10px;
 
@@ -21,6 +21,7 @@
   }
 
   &-title {
+    text-transform: uppercase;
     &-white {
       color: var(--ts-white);
     }
