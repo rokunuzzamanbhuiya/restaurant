@@ -131,4 +131,9 @@
       @include transition(0.3s);
     }
   }
+  &__content {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
 }

@@ -1198,6 +1198,7 @@ img {
 }
 .tsfooter__content h4 {
   color: var(--ts-white);
+  text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 .tsfooter__content span {
@@ -1632,6 +1633,9 @@ img {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+.tsabout__content h3 {
+  text-transform: uppercase;
 }
 
 .ts-food-area {
@@ -2139,12 +2143,12 @@ input[type=date]:focus {
 }
 @media (max-width: 575.98px) {
   .tsblog__content .blog-content-display h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (max-width: 440.98px) {
   .tsblog__content .blog-content-display h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .tsblog__content .blog-content-display p.blog-desc {
