@@ -72,6 +72,13 @@
   background: var(--ts-theme-color-2);
 }
 
+.ts-about-title {
+  text-transform: uppercase;
+  @media #{$md-m} {
+    font-size: 38px;
+  }
+}
+
 .ts-about-btn-call {
   display: flex;
   align-items: center;

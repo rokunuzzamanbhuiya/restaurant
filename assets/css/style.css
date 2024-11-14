@@ -1347,6 +1347,7 @@ img {
 .ts-hero-title {
   position: relative;
   margin-right: 30px;
+  text-transform: uppercase;
   color: var(--ts-white);
   background: rgb(181, 43, 29);
   background: linear-gradient(90deg, rgba(181, 43, 29, 0) 0%, rgba(181, 43, 29, 0.6) 100%);
@@ -1566,6 +1567,15 @@ img {
 
 .nav-pills .nav-link.active {
   background: var(--ts-theme-color-2);
+}
+
+.ts-about-title {
+  text-transform: uppercase;
+}
+@media (max-width: 991.98px) {
+  .ts-about-title {
+    font-size: 38px;
+  }
 }
 
 .ts-about-btn-call {
