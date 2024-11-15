@@ -8,12 +8,6 @@
   File Description: Main JS file of the template
 */
 
-  // var windowOn = $(window);
-
-  // windowOn.on("load", function () {
-  //   wowAnimation();
-  // });
-
   /*=============================================
 	=    		Preloader			      =
 =============================================*/
@@ -80,7 +74,6 @@
   /*=============================================
 	=    		3. Mobile Menu			      =
 =============================================*/
-
   // offcanvas toogle
   $(".ts-offcanvas-toogle").on("click", function () {
     $(".ts-offcanvas").addClass("ts-offcanvas-open");

@@ -5,16 +5,6 @@ https://res-taurant.netlify.app
 
 =================================
 
-# Restaurant React Website
-
-**React Website Live Link** <br>
-https://res-taurant-react.netlify.app
-
-**React Repository Link** <br>
-https://github.com/rokunuzzamanbhuiya/restaurant-react.git
-
-=================================
-
 A Modern and Responsive web application designed to provide a delightful food experience. This Website was built with HTML and includes various UI/UX enhancements using Bootstrap, Sass, Swiper Slider etc.
 
 ## Features
@@ -34,5 +24,16 @@ A Modern and Responsive web application designed to provide a delightful food ex
 - Preloader
 - Scroll Up Button
 - Custom Cursor
-- Blog Section
+- Blog Section Design
+- Clean & Commented Code
+
+=================================
+
+# Restaurant React Website
+
+**React Website Live Link** <br>
+https://res-tau-rant-react.netlify.app
+
+**React Repository Link** <br>
+https://github.com/rokunuzzamanbhuiya/restaurant-react.git
 
