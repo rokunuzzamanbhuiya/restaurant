@@ -3,6 +3,10 @@
 .ts-about-area {
   position: relative;
   overflow: hidden;
+  @media #{$xs-m} {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .ts-about-img-2 {
   position: absolute;

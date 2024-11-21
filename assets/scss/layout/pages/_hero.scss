@@ -8,6 +8,10 @@
     padding-top: 55px;
     padding-bottom: 55px;
   }
+  @media #{$xs-m} {
+    padding-top: 2px;
+    padding-bottom: 32px;
+  }
 }
 
 .ts-hero-content {
@@ -34,7 +38,7 @@
     background: transparent;
   }
   @media #{$xs-m} {
-    font-size: 60px;
+    font-size: 44px;
     background: transparent;
   }
 }
@@ -42,6 +46,12 @@
 .ts-hero-paragraph {
   font-size: 24px;
   color: var(--ts-white);
+  @media #{$xs-m} {
+    font-size: 20px;
+    br {
+      display: none;
+    }
+  }
 }
 
 .ts-hero-inner {
@@ -77,7 +87,7 @@
   z-index: 5;
   width: 49px;
   height: 49px;
-  top: 2.5%;
+  top: 2.2%;
   right: -2%;
   -webkit-animation: circle-animations 3s ease-in-out 1s forwards infinite
     alternate;
@@ -108,7 +118,7 @@
     z-index: 1;
   }
   @media (max-width: 390.98px) {
-    top: 73%;
+    top: 60%;
     right: 1%;
     z-index: 1;
   }
@@ -117,20 +127,20 @@
 .ts-hero-text {
   position: absolute;
   z-index: 5;
-  width: 120px;
-  height: 120px;
+  width: 115px;
+  height: 115px;
   line-height: 1;
-  bottom: -12%;
+  bottom: -16.2%;
   right: -4.5%;
   color: var(--ts-heading-color-3);
   background: var(--ts-theme-color);
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  padding-top: 22px;
+  padding-top: 18px;
   border-radius: 100%;
   border: 2px dashed var(--ts-theme-color-2);
-  outline: 7px solid var(--ts-theme-color);
+  outline: 8px solid var(--ts-theme-color);
   box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.25);
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
@@ -143,5 +153,7 @@
     height: 100px;
     padding: 18px;
     font-size: 28px;
+    bottom: 3%;
+    right: 8%;
   }
 }
