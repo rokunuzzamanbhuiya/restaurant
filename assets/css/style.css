@@ -584,6 +584,12 @@ img {
   font-size: 18px;
   font-weight: 700;
 }
+@media (max-width: 575.98px) {
+  .ts-btn-2 {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
 .ts-btn-wrap {
   position: relative;
   display: block;
@@ -1406,7 +1412,14 @@ img {
   left: 4%;
   background: var(--ts-white);
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
+  .ts-about-thumb .ts-about-experience {
+    top: 8%;
+    left: 6%;
+    padding: 12px 14px;
+  }
+}
+@media (max-width: 385px) {
   .ts-about-thumb .ts-about-experience {
     top: 4%;
     left: 3%;
@@ -1425,6 +1438,17 @@ img {
   font-weight: 600;
 }
 
+@media (max-width: 1199.98px) {
+  .ts-about-tab {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ts-about-tab {
+    margin-top: 30px;
+  }
+}
+
 .nav {
   border-bottom: 1px solid var(--ts-theme-color-2);
 }
@@ -1432,9 +1456,10 @@ img {
 .nav-pills .nav-link {
   border-radius: 0;
   color: #333333;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   margin-right: 16px;
+  padding: 6px 17px;
 }
 
 .nav-pills .nav-link.active {
@@ -1446,7 +1471,13 @@ img {
 }
 @media (max-width: 991.98px) {
   .ts-about-title {
-    font-size: 38px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .ts-about-btn {
+    margin-right: 24px;
   }
 }
 
@@ -1454,12 +1485,17 @@ img {
   display: flex;
   align-items: center;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 385px) {
   .ts-about-btn-call {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ts-about-btn-call .ts-about-btn {
+    margin-right: 20px;
   }
 }
 
@@ -1478,6 +1514,17 @@ img {
 .ts-about-call span {
   font-size: 18px;
   font-weight: 700;
+}
+@media (max-width: 575.98px) {
+  .ts-about-call span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ts-about-bottom {
+    margin-top: 50px;
+  }
 }
 
 .tsabout {
@@ -1498,6 +1545,14 @@ img {
   text-align: center;
   margin-right: 15px;
 }
+@media (max-width: 575.98px) {
+  .tsabout__icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 70px;
+  }
+}
 .tsabout__icon img {
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -1505,8 +1560,27 @@ img {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+@media (max-width: 575.98px) {
+  .tsabout__icon img {
+    width: 26px;
+    height: auto;
+  }
+}
 .tsabout__content h3 {
   text-transform: uppercase;
+}
+@media (max-width: 575.98px) {
+  .tsabout__content h3 {
+    font-size: 24px;
+  }
+}
+.tsabout__content span {
+  font-size: 20px;
+}
+@media (max-width: 575.98px) {
+  .tsabout__content span {
+    font-size: 18px;
+  }
 }
 
 .ts-food-area {

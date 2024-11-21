@@ -25,6 +25,7 @@ A Modern and Responsive web application designed to provide a delightful food ex
 - Scroll Up Button
 - Custom Cursor
 - Blog Section Design
+- W3C Validate Code
 - Clean & Commented Code
 
 =================================
