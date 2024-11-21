@@ -1460,6 +1460,12 @@ img {
   top: 40%;
   left: 20.5%;
 }
+@media (max-width: 991.98px) {
+  .ts-about-thumb .ts-about-experience .ts-about-experience-left span {
+    top: 40%;
+    left: 18%;
+  }
+}
 .ts-about-thumb .ts-about-experience .ts-about-experience-right span {
   font-size: 16px;
   font-weight: 600;

@@ -55,6 +55,10 @@
         font-weight: 700;
         top: 40%;
         left: 20.5%;
+        @media #{$md-m} {
+          top: 40%;
+          left: 18%;
+        }
       }
     }
     & .ts-about-experience-right {
