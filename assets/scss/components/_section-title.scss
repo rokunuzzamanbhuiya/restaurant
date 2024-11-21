@@ -1,5 +1,11 @@
 @use "../utils" as *;
 
+.ts-section-title-wrapper {
+  @media #{$md-m} {
+    margin-bottom: 40px;
+  }
+}
+
 .ts-section {
   &-subtitle {
     display: block;

@@ -10,14 +10,14 @@
 }
 .ts-about-img-2 {
   position: absolute;
-  right: -10%;
-  bottom: 10%;
+  right: -7%;
+  bottom: 12%;
   z-index: 1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
-  @media #{$lg-m} {
-    right: -306%;
-    bottom: 10%;
+  @media #{$xl-m} {
+    right: -15%;
+    bottom: 12%;
   }
   @media #{$md-m} {
     display: none;

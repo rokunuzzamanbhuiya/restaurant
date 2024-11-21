@@ -7,17 +7,25 @@
     padding-top: 120px;
     padding-bottom: 150px;
   }
+  @media #{$xs-m} {
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
 }
 
 .ts-food-bg-img {
   position: absolute;
-  left: -10%;
+  left: -7%;
   bottom: 20%;
   z-index: 1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
+  @media #{$xl-m} {
+    left: -12%;
+    bottom: 20%;
+  }
   @media #{$lg-m} {
-    left: -60%;
+    left: -20%;
     bottom: 20%;
   }
   @media #{$md-m} {
@@ -65,6 +73,13 @@
   }
 }
 
+.tsFoodSwiper {
+  @media #{$md-m} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .ts-food-slider-arrow {
   position: relative;
   display: flex;
@@ -86,7 +101,7 @@
   }
   @media #{$xs-m} {
     position: absolute;
-    bottom: -70%;
+    bottom: -74%;
     right: 50%;
     transform: translateX(50%);
   }

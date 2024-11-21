@@ -723,6 +723,12 @@ img {
     transform: rotate(360deg);
   }
 }
+@media (max-width: 991.98px) {
+  .ts-section-title-wrapper {
+    margin-bottom: 40px;
+  }
+}
+
 .ts-section-subtitle {
   display: block;
   font-size: 20px;
@@ -1380,16 +1386,16 @@ img {
 
 .ts-about-img-2 {
   position: absolute;
-  right: -10%;
-  bottom: 10%;
+  right: -7%;
+  bottom: 12%;
   z-index: 1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
 }
-@media (max-width: 1199.98px) {
+@media (max-width: 1399.98px) {
   .ts-about-img-2 {
-    right: -306%;
-    bottom: 10%;
+    right: -15%;
+    bottom: 12%;
   }
 }
 @media (max-width: 991.98px) {
@@ -1593,18 +1599,30 @@ img {
     padding-bottom: 150px;
   }
 }
+@media (max-width: 575.98px) {
+  .ts-food-area {
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+}
 
 .ts-food-bg-img {
   position: absolute;
-  left: -10%;
+  left: -7%;
   bottom: 20%;
   z-index: 1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
 }
+@media (max-width: 1399.98px) {
+  .ts-food-bg-img {
+    left: -12%;
+    bottom: 20%;
+  }
+}
 @media (max-width: 1199.98px) {
   .ts-food-bg-img {
-    left: -60%;
+    left: -20%;
     bottom: 20%;
   }
 }
@@ -1660,6 +1678,13 @@ img {
   color: #0a1425;
 }
 
+@media (max-width: 991.98px) {
+  .tsFoodSwiper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .ts-food-slider-arrow {
   position: relative;
   display: flex;
@@ -1687,7 +1712,7 @@ img {
 @media (max-width: 575.98px) {
   .ts-food-slider-arrow {
     position: absolute;
-    bottom: -70%;
+    bottom: -74%;
     right: 50%;
     transform: translateX(50%);
   }
@@ -1736,6 +1761,18 @@ img {
 .ts-book-area {
   position: relative;
 }
+@media (max-width: 1199.98px) {
+  .ts-book-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ts-book-area {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
+}
 
 .ts-book-paragraph {
   color: var(--ts-white);
@@ -1743,6 +1780,7 @@ img {
 }
 @media (max-width: 991.98px) {
   .ts-book-paragraph {
+    margin-top: 0;
     padding: 0;
   }
 }

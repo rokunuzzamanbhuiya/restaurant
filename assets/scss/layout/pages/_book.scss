@@ -2,12 +2,21 @@
 
 .ts-book-area {
   position: relative;
+  @media #{$lg-m} {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @media #{$xs-m} {
+    padding-top: 35px;
+    padding-bottom: 25px;
+  }
 }
 
 .ts-book-paragraph {
   color: var(--ts-white);
   padding: 0 100px 0 0;
   @media #{$md-m} {
+    margin-top: 0;
     padding: 0;
   }
 }
