@@ -1043,6 +1043,22 @@ img {
 .ts-footer-bg {
   position: relative;
 }
+@media (max-width: 1199.98px) {
+  .ts-footer-bg {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ts-footer-bg {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+
+.ts-footer-section-title-wrapper {
+  margin-bottom: 48px;
+}
 
 .tsfooter:hover .tsfooter__icon img {
   -webkit-animation: shake 0.3s linear;
@@ -1064,6 +1080,11 @@ img {
   color: #f7f8f9;
 }
 
+@media (max-width: 991.98px) {
+  .ts-footer-bottom {
+    margin-top: 68px;
+  }
+}
 .ts-footer-bottom .ts-footer-social ul {
   display: flex;
   align-items: center;
@@ -2131,10 +2152,27 @@ input[type=date]:focus {
   position: relative;
   background: #fbf7f2;
 }
+@media (max-width: 1199.98px) {
+  .ts-blog-area {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (max-width: 575.98px) {
+  .ts-blog-area {
+    padding-top: 35px;
+    padding-bottom: 55px;
+  }
+}
 
 .tsblog__content {
   position: relative;
   margin-bottom: 20px;
+}
+@media (max-width: 575.98px) {
+  .tsblog__content {
+    margin-bottom: 40px;
+  }
 }
 .tsblog__content:hover .blog-content-display {
   bottom: -28px;
@@ -2166,10 +2204,18 @@ input[type=date]:focus {
   opacity: 1;
   transition: all 0.5s ease-in-out;
 }
-@media (max-width: 440.98px) {
+@media (max-width: 575.98px) {
   .tsblog__content .blog-content-display {
-    padding: 30px 15px;
+    padding: 22px 12px 10px;
   }
+}
+.tsblog__content .blog-content-display h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
 }
 .tsblog__content .blog-content-display h3 a {
   line-height: 30px;
@@ -2179,12 +2225,7 @@ input[type=date]:focus {
 }
 @media (max-width: 575.98px) {
   .tsblog__content .blog-content-display h3 {
-    font-size: 22px;
-  }
-}
-@media (max-width: 440.98px) {
-  .tsblog__content .blog-content-display h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 .tsblog__content .blog-content-display p.blog-desc {

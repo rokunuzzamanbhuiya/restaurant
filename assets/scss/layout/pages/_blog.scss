@@ -3,12 +3,23 @@
 .ts-blog-area {
   position: relative;
   background: #fbf7f2;
+  @media #{$lg-m} {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  @media #{$xs-m} {
+    padding-top: 35px;
+    padding-bottom: 55px;
+  }
 }
 
 .tsblog {
   &__content {
     position: relative;
     margin-bottom: 20px;
+    @media #{$xs-m} {
+      margin-bottom: 40px;
+    }
 
     &:hover {
       .blog-content-display {
@@ -43,11 +54,18 @@
       left: 10%;
       opacity: 1;
       transition: all 0.5s ease-in-out;
-      @media (max-width: 440.98px) {
-        padding: 30px 15px;
+
+      @media #{$xs-m} {
+        padding: 22px 12px 10px;
       }
 
       h3 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        width: 100%;
         a {
           line-height: 30px;
           &:hover {
@@ -55,10 +73,7 @@
           }
         }
         @media #{$xs-m} {
-          font-size: 22px;
-        }
-        @media (max-width: 440.98px) {
-          font-size: 18px;
+          font-size: 25px;
         }
       }
 

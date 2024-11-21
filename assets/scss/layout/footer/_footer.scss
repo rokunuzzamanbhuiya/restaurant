@@ -2,6 +2,18 @@
 
 .ts-footer-bg {
   position: relative;
+  @media #{$lg-m} {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  @media #{$xs-m} {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+
+.ts-footer-section-title-wrapper {
+  margin-bottom: 48px;
 }
 
 .tsfooter {
@@ -31,6 +43,9 @@
 }
 
 .ts-footer-bottom {
+  @media #{$md-m} {
+    margin-top: 68px;
+  }
   & .ts-footer-social {
     & ul {
       display: flex;
