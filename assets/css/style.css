@@ -1737,6 +1737,15 @@ img {
 .ts-food-slider-arrow .ts-swiper-food-button-prev i:hover {
   color: var(--ts-theme-color-2);
 }
+@media (max-width: 575.98px) {
+  .ts-food-slider-arrow .ts-swiper-food-button-prev i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+}
 .ts-food-slider-arrow .ts-swiper-food-button-next i {
   width: 60px;
   height: 60px;
@@ -1756,6 +1765,15 @@ img {
 }
 .ts-food-slider-arrow .ts-swiper-food-button-next i:hover {
   color: var(--ts-theme-color-2);
+}
+@media (max-width: 575.98px) {
+  .ts-food-slider-arrow .ts-swiper-food-button-next i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
 }
 
 .ts-book-area {
@@ -1853,11 +1871,17 @@ input[type=date]:focus {
     padding-bottom: 150px;
   }
 }
+@media (max-width: 575.98px) {
+  .ts-testimonial-area {
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+}
 
 .ts-testimonial-bg-img1 {
   position: absolute;
   top: 15%;
-  left: -10%;
+  left: -8%;
   z-index: -1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
@@ -1882,7 +1906,7 @@ input[type=date]:focus {
 
 .ts-testimonial-bg-img2 {
   position: absolute;
-  right: -7%;
+  right: -7.4%;
   bottom: 10%;
   animation: downup 5s infinite ease-in-out alternate;
   -webkit-animation: downup 5s infinite ease-in-out alternate;
@@ -1908,7 +1932,7 @@ input[type=date]:focus {
 }
 @media (max-width: 575.98px) {
   .ts-testimonial-content {
-    padding: 95px 45px 75px;
+    padding: 50px 45px 25px;
   }
 }
 .ts-testimonial-content .ts-testimonial-quote {
@@ -1923,6 +1947,11 @@ input[type=date]:focus {
   position: relative;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--ts-black);
+}
+@media (max-width: 575.98px) {
+  .ts-testimonial-content .ts-testimonial-info {
+    margin-top: 50px;
+  }
 }
 .ts-testimonial-content .ts-testimonial-info::after {
   position: absolute;
@@ -1950,6 +1979,12 @@ input[type=date]:focus {
   position: absolute;
   left: 0;
   bottom: 10%;
+}
+@media (max-width: 575.98px) {
+  .ts-testimonial-content .ts-testimonial-shape {
+    left: 0;
+    bottom: -2%;
+  }
 }
 
 .ts-testimonial-thumb {
@@ -2028,7 +2063,7 @@ input[type=date]:focus {
 @media (max-width: 575.98px) {
   .ts-testimonial-slider-arrow {
     position: absolute;
-    bottom: -84%;
+    bottom: -82%;
     right: 50%;
     transform: translateX(50%);
   }
@@ -2053,6 +2088,15 @@ input[type=date]:focus {
 .ts-testimonial-slider-arrow .ts-swiper-testimonial-button-prev i:hover {
   color: var(--ts-theme-color-2);
 }
+@media (max-width: 575.98px) {
+  .ts-testimonial-slider-arrow .ts-swiper-testimonial-button-prev i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
+}
 .ts-testimonial-slider-arrow .ts-swiper-testimonial-button-next i {
   width: 60px;
   height: 60px;
@@ -2072,6 +2116,15 @@ input[type=date]:focus {
 }
 .ts-testimonial-slider-arrow .ts-swiper-testimonial-button-next i:hover {
   color: var(--ts-theme-color-2);
+}
+@media (max-width: 575.98px) {
+  .ts-testimonial-slider-arrow .ts-swiper-testimonial-button-next i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+  }
 }
 
 .ts-blog-area {

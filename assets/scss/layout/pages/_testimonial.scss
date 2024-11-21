@@ -8,12 +8,16 @@
     padding-top: 120px;
     padding-bottom: 150px;
   }
+  @media #{$xs-m} {
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
 }
 
 .ts-testimonial-bg-img1 {
   position: absolute;
   top: 15%;
-  left: -10%;
+  left: -8%;
   z-index: -1;
   animation: downup 3s infinite ease-in-out alternate;
   -webkit-animation: downup 3s infinite ease-in-out alternate;
@@ -32,7 +36,7 @@
 
 .ts-testimonial-bg-img2 {
   position: absolute;
-  right: -7%;
+  right: -7.4%;
   bottom: 10%;
   animation: downup 5s infinite ease-in-out alternate;
   -webkit-animation: downup 5s infinite ease-in-out alternate;
@@ -53,7 +57,7 @@
   height: 100%;
 
   @media #{$xs-m} {
-    padding: 95px 45px 75px;
+    padding: 50px 45px 25px;
   }
 
   & .ts-testimonial-quote {
@@ -70,6 +74,9 @@
     position: relative;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--ts-black);
+    @media #{$xs-m} {
+      margin-top: 50px;
+    }
     &::after {
       position: absolute;
       content: "";
@@ -100,6 +107,10 @@
     position: absolute;
     left: 0;
     bottom: 10%;
+    @media #{$xs-m} {
+      left: 0;
+      bottom: -2%;
+    }
   }
 }
 
@@ -168,7 +179,7 @@
   }
   @media #{$xs-m} {
     position: absolute;
-    bottom: -84%;
+    bottom: -82%;
     right: 50%;
     transform: translateX(50%);
   }
@@ -188,6 +199,13 @@
       &:hover {
         color: var(--ts-theme-color-2);
       }
+      @media #{$xs-m} {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
+      }
     }
   }
   & .ts-swiper-testimonial-button-next {
@@ -205,6 +223,13 @@
       @include transition(0.3s);
       &:hover {
         color: var(--ts-theme-color-2);
+      }
+      @media #{$xs-m} {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border-radius: 50px;
+        font-size: 16px;
       }
     }
   }
