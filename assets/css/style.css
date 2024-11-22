@@ -571,7 +571,7 @@ img {
   position: relative;
   background-color: var(--ts-theme-color);
   color: #0a1425;
-  padding: 8px 23px;
+  padding: 9px 23px 7px;
   font-size: 16px;
   font-weight: 700;
   font-family: var(--ts-font-body);
@@ -580,7 +580,7 @@ img {
   z-index: 5;
 }
 .ts-btn-2 {
-  padding: 15px 23px;
+  padding: 16px 23px 14px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -592,7 +592,9 @@ img {
 }
 .ts-btn-wrap {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .ts-btn-wrap span {
@@ -1934,7 +1936,7 @@ input[type=date]:focus {
 .ts-testimonial-bg-img2 {
   position: absolute;
   right: -7.4%;
-  bottom: 10%;
+  bottom: 5%;
   animation: downup 5s infinite ease-in-out alternate;
   -webkit-animation: downup 5s infinite ease-in-out alternate;
 }

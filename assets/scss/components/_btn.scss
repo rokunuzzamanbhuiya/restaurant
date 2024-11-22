@@ -4,7 +4,7 @@
   position: relative;
   background-color: var(--ts-theme-color);
   color: #0a1425;
-  padding: 8px 23px;
+  padding: 9px 23px 7px;
   font-size: 16px;
   font-weight: 700;
   font-family: var(--ts-font-body);
@@ -13,7 +13,7 @@
   z-index: 5;
 
   &-2 {
-    padding: 15px 23px;
+    padding: 16px 23px 14px;
     font-size: 18px;
     font-weight: 700;
     @media #{$xs-m} {
@@ -24,7 +24,9 @@
 
   &-wrap {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     & span {
       display: block;
