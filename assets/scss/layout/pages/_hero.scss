@@ -45,6 +45,8 @@
 
 .ts-hero-paragraph {
   font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
   color: var(--ts-white);
   @media #{$xs-m} {
     font-size: 20px;
