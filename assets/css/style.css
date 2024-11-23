@@ -1391,7 +1391,7 @@ img {
   color: var(--ts-heading-color-3);
   background: var(--ts-theme-color);
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   padding-top: 18px;
   border-radius: 100%;
@@ -2021,7 +2021,7 @@ input[type=date]:focus {
 }
 .ts-testimonial-content .ts-testimonial-info .ts-testimonial-name-desig h5 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
 }
 .ts-testimonial-content .ts-testimonial-info .ts-testimonial-name-desig span {
