@@ -40,9 +40,6 @@
       margin-bottom: 40px;
     }
   }
-  &-title {
-    font-size: 32px;
-  }
   &-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -58,7 +55,7 @@
   }
   &-sm-title {
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 15px;
   }
   &-social {

@@ -897,9 +897,6 @@ img {
     margin-bottom: 40px;
   }
 }
-.ts-offcanvas-title {
-  font-size: 32px;
-}
 .ts-offcanvas-gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -913,7 +910,7 @@ img {
 }
 .ts-offcanvas-sm-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 15px;
 }
 .ts-offcanvas-social a {
