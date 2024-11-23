@@ -567,6 +567,26 @@ img {
     opacity: 1;
   }
 }
+@keyframes scrolltopicon {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+}
+@-webkit-keyframes scrolltopicon {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+}
 .ts-btn {
   position: relative;
   background-color: var(--ts-theme-color);
